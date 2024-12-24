@@ -2,13 +2,13 @@
 {
     partial class FormMain
     {
-        // <summary>
-        ///  Required designer variable.
+        /// <summary>
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,313 +23,703 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            panelWMP = new Panel();
-            WMP = new AxWMPLib.AxWindowsMediaPlayer();
-            panelInfo = new Panel();
-            textBoxDesc = new TextBox();
-            labelDesc = new Label();
-            labelS = new Label();
-            textBoxS = new TextBox();
-            labelM = new Label();
-            textBoxM = new TextBox();
-            labelH = new Label();
-            textBoxH = new TextBox();
-            labelDuration = new Label();
-            textBoxName = new TextBox();
-            labelName = new Label();
-            textBoxFilePath = new TextBox();
-            labelFilePath = new Label();
-            panelCntrl = new Panel();
-            buttonDeleteFile = new Button();
-            buttonAddFile = new Button();
-            buttonHelp = new Button();
-            panelPlaylist = new Panel();
-            dataGridViewPlaylist = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            panelWMP.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)WMP).BeginInit();
-            panelInfo.SuspendLayout();
-            panelCntrl.SuspendLayout();
-            panelPlaylist.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewPlaylist).BeginInit();
-            SuspendLayout();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.openFileDialogMain_GAM = new System.Windows.Forms.OpenFileDialog();
+            this.panelUpper_GAM = new System.Windows.Forms.Panel();
+            this.buttonMenu_GAM = new System.Windows.Forms.Button();
+            this.pictureBoxSort_GAM = new System.Windows.Forms.PictureBox();
+            this.buttonReset_GAM = new System.Windows.Forms.Button();
+            this.menuStripSort_GAM = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItemMain_GAM = new System.Windows.Forms.ToolStripMenuItem();
+            this.сортировкаToolStripMenuItemMain_GAM = new System.Windows.Forms.ToolStripMenuItem();
+            this.столбецВесToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.столбецIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.поУбываниюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.столбецДлительностьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.столбецВесToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.столбецДатаToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBoxAbout_GAM = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSave_GAM = new System.Windows.Forms.PictureBox();
+            this.pictureBoxManagement_GAM = new System.Windows.Forms.PictureBox();
+            this.pictureBoxLoad_GAM = new System.Windows.Forms.PictureBox();
+            this.buttonAbout_GAM = new System.Windows.Forms.Button();
+            this.buttonSave_GAM = new System.Windows.Forms.Button();
+            this.buttonManagement_GAM = new System.Windows.Forms.Button();
+            this.buttonLoad_GAM = new System.Windows.Forms.Button();
+            this.panelDown_GAM = new System.Windows.Forms.Panel();
+            this.buttonGraph_GAM = new System.Windows.Forms.Button();
+            this.textBoxFilter_GAM = new System.Windows.Forms.TextBox();
+            this.textBoxSearch_GAM = new System.Windows.Forms.TextBox();
+            this.buttonLeft_GAM = new System.Windows.Forms.Button();
+            this.buttonRight_GAM = new System.Windows.Forms.Button();
+            this.buttonSearch_GAM = new System.Windows.Forms.Button();
+            this.pictureBoxSearch_GAM = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFilter_GAM = new System.Windows.Forms.PictureBox();
+            this.menuStripMain_GAM = new System.Windows.Forms.MenuStrip();
+            this.фильтрToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.названиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.весToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.длительностьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.форматToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.категорияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panelMiddle_GAM = new System.Windows.Forms.Panel();
+            this.groupBoxBase_GAM = new System.Windows.Forms.GroupBox();
+            this.dataGridViewBase_GAM = new System.Windows.Forms.DataGridView();
+            this.saveFileDialogMain_GAM = new System.Windows.Forms.SaveFileDialog();
+            this.toolTipButtons_GAM = new System.Windows.Forms.ToolTip(this.components);
+            this.panelUpper_GAM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSort_GAM)).BeginInit();
+            this.menuStripSort_GAM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAbout_GAM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSave_GAM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxManagement_GAM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoad_GAM)).BeginInit();
+            this.panelDown_GAM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch_GAM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFilter_GAM)).BeginInit();
+            this.menuStripMain_GAM.SuspendLayout();
+            this.panelMiddle_GAM.SuspendLayout();
+            this.groupBoxBase_GAM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBase_GAM)).BeginInit();
+            this.SuspendLayout();
             // 
-            // panelWMP
+            // openFileDialogMain_GAM
             // 
-            panelWMP.Location = new Point(1, 0);
-            panelWMP.Name = "panelWMP";
-            panelWMP.Size = new Size(669, 393);
-            panelWMP.TabIndex = 0;
+            this.openFileDialogMain_GAM.FileName = "openFileDialog1";
             // 
-            // WMP
+            // panelUpper_GAM
             // 
-            WMP.Dock = DockStyle.Fill;
-            WMP.Enabled = true;
-            WMP.Location = new Point(0, 0);
-            WMP.Name = "WMP";
-            WMP.OcxState = (AxHost.State)resources.GetObject("WMP.OcxState");
-            WMP.Size = new Size(669, 393);
-            WMP.TabIndex = 0;
+            this.panelUpper_GAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.panelUpper_GAM.Controls.Add(this.buttonMenu_GAM);
+            this.panelUpper_GAM.Controls.Add(this.pictureBoxSort_GAM);
+            this.panelUpper_GAM.Controls.Add(this.buttonReset_GAM);
+            this.panelUpper_GAM.Controls.Add(this.menuStripSort_GAM);
+            this.panelUpper_GAM.Controls.Add(this.pictureBoxAbout_GAM);
+            this.panelUpper_GAM.Controls.Add(this.pictureBoxSave_GAM);
+            this.panelUpper_GAM.Controls.Add(this.pictureBoxManagement_GAM);
+            this.panelUpper_GAM.Controls.Add(this.pictureBoxLoad_GAM);
+            this.panelUpper_GAM.Controls.Add(this.buttonAbout_GAM);
+            this.panelUpper_GAM.Controls.Add(this.buttonSave_GAM);
+            this.panelUpper_GAM.Controls.Add(this.buttonManagement_GAM);
+            this.panelUpper_GAM.Controls.Add(this.buttonLoad_GAM);
+            this.panelUpper_GAM.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelUpper_GAM.Location = new System.Drawing.Point(0, 0);
+            this.panelUpper_GAM.Name = "panelUpper_GAM";
+            this.panelUpper_GAM.Size = new System.Drawing.Size(804, 84);
+            this.panelUpper_GAM.TabIndex = 0;
             // 
-            // panelInfo
+            // buttonMenu_GAM
             // 
-            panelInfo.BorderStyle = BorderStyle.Fixed3D;
-            panelInfo.Controls.Add(textBoxDesc);
-            panelInfo.Controls.Add(labelDesc);
-            panelInfo.Controls.Add(labelS);
-            panelInfo.Controls.Add(textBoxS);
-            panelInfo.Controls.Add(labelM);
-            panelInfo.Controls.Add(textBoxM);
-            panelInfo.Controls.Add(labelH);
-            panelInfo.Controls.Add(textBoxH);
-            panelInfo.Controls.Add(labelDuration);
-            panelInfo.Controls.Add(textBoxName);
-            panelInfo.Controls.Add(labelName);
-            panelInfo.Controls.Add(textBoxFilePath);
-            panelInfo.Controls.Add(labelFilePath);
-            panelInfo.Location = new Point(1, 399);
-            panelInfo.Name = "panelInfo";
-            panelInfo.Size = new Size(669, 177);
-            panelInfo.TabIndex = 2;
+            this.buttonMenu_GAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.buttonMenu_GAM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonMenu_GAM.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonMenu_GAM.Location = new System.Drawing.Point(5, 46);
+            this.buttonMenu_GAM.Name = "buttonMenu_GAM";
+            this.buttonMenu_GAM.Size = new System.Drawing.Size(132, 34);
+            this.buttonMenu_GAM.TabIndex = 6;
+            this.buttonMenu_GAM.Text = "Главное меню";
+            this.toolTipButtons_GAM.SetToolTip(this.buttonMenu_GAM, "Вернуться в главное меню");
+            this.buttonMenu_GAM.UseVisualStyleBackColor = false;
+            this.buttonMenu_GAM.Click += new System.EventHandler(this.buttonMenu_GAM_Click);
+            this.buttonMenu_GAM.MouseEnter += new System.EventHandler(this.buttonMenu_GAM_MouseEnter);
+            this.buttonMenu_GAM.MouseLeave += new System.EventHandler(this.buttonMenu_GAM_MouseLeave);
             // 
-            // textBoxDesc
+            // pictureBoxSort_GAM
             // 
-            textBoxDesc.Location = new Point(158, 91);
-            textBoxDesc.Multiline = true;
-            textBoxDesc.Name = "textBoxDesc";
-            textBoxDesc.ReadOnly = true;
-            textBoxDesc.Size = new Size(423, 85);
-            textBoxDesc.TabIndex = 25;
+            this.pictureBoxSort_GAM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxSort_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSort_GAM.Image")));
+            this.pictureBoxSort_GAM.Location = new System.Drawing.Point(557, 55);
+            this.pictureBoxSort_GAM.Name = "pictureBoxSort_GAM";
+            this.pictureBoxSort_GAM.Size = new System.Drawing.Size(29, 29);
+            this.pictureBoxSort_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSort_GAM.TabIndex = 5;
+            this.pictureBoxSort_GAM.TabStop = false;
             // 
-            // labelDesc
+            // buttonReset_GAM
             // 
-            labelDesc.AutoSize = true;
-            labelDesc.Location = new Point(87, 91);
-            labelDesc.Name = "labelDesc";
-            labelDesc.Size = new Size(65, 15);
-            labelDesc.TabIndex = 24;
-            labelDesc.Text = "Описание:";
+            this.buttonReset_GAM.BackColor = System.Drawing.Color.Transparent;
+            this.buttonReset_GAM.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonReset_GAM.BackgroundImage")));
+            this.buttonReset_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonReset_GAM.Enabled = false;
+            this.buttonReset_GAM.FlatAppearance.BorderSize = 0;
+            this.buttonReset_GAM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonReset_GAM.Location = new System.Drawing.Point(304, 6);
+            this.buttonReset_GAM.Name = "buttonReset_GAM";
+            this.buttonReset_GAM.Size = new System.Drawing.Size(32, 32);
+            this.buttonReset_GAM.TabIndex = 4;
+            this.toolTipButtons_GAM.SetToolTip(this.buttonReset_GAM, "Вернуть таблицу к исходному виду");
+            this.buttonReset_GAM.UseVisualStyleBackColor = false;
+            this.buttonReset_GAM.Click += new System.EventHandler(this.buttonReset_GAM_Click);
+            this.buttonReset_GAM.MouseEnter += new System.EventHandler(this.buttonReset_GAM_MouseEnter);
+            this.buttonReset_GAM.MouseLeave += new System.EventHandler(this.buttonReset_GAM_MouseLeave);
             // 
-            // labelS
+            // menuStripSort_GAM
             // 
-            labelS.AutoSize = true;
-            labelS.Location = new Point(326, 62);
-            labelS.Name = "labelS";
-            labelS.Size = new Size(49, 15);
-            labelS.TabIndex = 23;
-            labelS.Text = "Секунд:";
+            this.menuStripSort_GAM.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.menuStripSort_GAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.menuStripSort_GAM.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStripSort_GAM.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemMain_GAM,
+            this.поУбываниюToolStripMenuItem});
+            this.menuStripSort_GAM.Location = new System.Drawing.Point(589, 59);
+            this.menuStripSort_GAM.Name = "menuStripSort_GAM";
+            this.menuStripSort_GAM.Size = new System.Drawing.Size(214, 24);
+            this.menuStripSort_GAM.TabIndex = 3;
+            this.menuStripSort_GAM.Text = "menuStrip1";
             // 
-            // textBoxS
+            // toolStripMenuItemMain_GAM
             // 
-            textBoxS.Location = new Point(381, 59);
-            textBoxS.Name = "textBoxS";
-            textBoxS.ReadOnly = true;
-            textBoxS.Size = new Size(25, 23);
-            textBoxS.TabIndex = 22;
+            this.toolStripMenuItemMain_GAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.toolStripMenuItemMain_GAM.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.сортировкаToolStripMenuItemMain_GAM,
+            this.столбецВесToolStripMenuItem,
+            this.столбецIDToolStripMenuItem});
+            this.toolStripMenuItemMain_GAM.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.toolStripMenuItemMain_GAM.Name = "toolStripMenuItemMain_GAM";
+            this.toolStripMenuItemMain_GAM.Size = new System.Drawing.Size(110, 20);
+            this.toolStripMenuItemMain_GAM.Text = "По возрастанию";
             // 
-            // labelM
+            // сортировкаToolStripMenuItemMain_GAM
             // 
-            labelM.AutoSize = true;
-            labelM.Location = new Point(251, 62);
-            labelM.Name = "labelM";
-            labelM.Size = new Size(46, 15);
-            labelM.TabIndex = 21;
-            labelM.Text = "Минут:";
+            this.сортировкаToolStripMenuItemMain_GAM.Name = "сортировкаToolStripMenuItemMain_GAM";
+            this.сортировкаToolStripMenuItemMain_GAM.Size = new System.Drawing.Size(211, 22);
+            this.сортировкаToolStripMenuItemMain_GAM.Text = "Столбец \"Длительность\"";
+            this.сортировкаToolStripMenuItemMain_GAM.Click += new System.EventHandler(this.сортировкаToolStripMenuItem_Click_1);
             // 
-            // textBoxM
+            // столбецВесToolStripMenuItem
             // 
-            textBoxM.Location = new Point(295, 59);
-            textBoxM.Name = "textBoxM";
-            textBoxM.ReadOnly = true;
-            textBoxM.Size = new Size(25, 23);
-            textBoxM.TabIndex = 20;
+            this.столбецВесToolStripMenuItem.Name = "столбецВесToolStripMenuItem";
+            this.столбецВесToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.столбецВесToolStripMenuItem.Text = "Столбец \"Вес\"";
+            this.столбецВесToolStripMenuItem.Click += new System.EventHandler(this.столбецВесToolStripMenuItem_Click);
             // 
-            // labelH
+            // столбецIDToolStripMenuItem
             // 
-            labelH.AutoSize = true;
-            labelH.Location = new Point(176, 62);
-            labelH.Name = "labelH";
-            labelH.Size = new Size(43, 15);
-            labelH.TabIndex = 19;
-            labelH.Text = "Часов:";
+            this.столбецIDToolStripMenuItem.Name = "столбецIDToolStripMenuItem";
+            this.столбецIDToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.столбецIDToolStripMenuItem.Text = "Столбец \"ID\"";
+            this.столбецIDToolStripMenuItem.Click += new System.EventHandler(this.столбецIDToolStripMenuItem_Click);
             // 
-            // textBoxH
+            // поУбываниюToolStripMenuItem
             // 
-            textBoxH.Location = new Point(220, 59);
-            textBoxH.Name = "textBoxH";
-            textBoxH.ReadOnly = true;
-            textBoxH.Size = new Size(25, 23);
-            textBoxH.TabIndex = 18;
+            this.поУбываниюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.столбецДлительностьToolStripMenuItem,
+            this.столбецВесToolStripMenuItem1,
+            this.столбецДатаToolStripMenuItem1});
+            this.поУбываниюToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.поУбываниюToolStripMenuItem.Name = "поУбываниюToolStripMenuItem";
+            this.поУбываниюToolStripMenuItem.Size = new System.Drawing.Size(96, 20);
+            this.поУбываниюToolStripMenuItem.Text = "По убыванию";
             // 
-            // labelDuration
+            // столбецДлительностьToolStripMenuItem
             // 
-            labelDuration.AutoSize = true;
-            labelDuration.Location = new Point(87, 62);
-            labelDuration.Name = "labelDuration";
-            labelDuration.Size = new Size(87, 15);
-            labelDuration.TabIndex = 17;
-            labelDuration.Text = "Длительность:";
+            this.столбецДлительностьToolStripMenuItem.Name = "столбецДлительностьToolStripMenuItem";
+            this.столбецДлительностьToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.столбецДлительностьToolStripMenuItem.Text = "Столбец \"Длительность\"";
+            this.столбецДлительностьToolStripMenuItem.Click += new System.EventHandler(this.столбецДлительностьToolStripMenuItem_Click);
             // 
-            // textBoxName
+            // столбецВесToolStripMenuItem1
             // 
-            textBoxName.Location = new Point(155, 34);
-            textBoxName.Name = "textBoxName";
-            textBoxName.ReadOnly = true;
-            textBoxName.Size = new Size(393, 23);
-            textBoxName.TabIndex = 16;
+            this.столбецВесToolStripMenuItem1.Name = "столбецВесToolStripMenuItem1";
+            this.столбецВесToolStripMenuItem1.Size = new System.Drawing.Size(211, 22);
+            this.столбецВесToolStripMenuItem1.Text = "Столбец \"Вес\"";
+            this.столбецВесToolStripMenuItem1.Click += new System.EventHandler(this.столбецВесToolStripMenuItem1_Click);
             // 
-            // labelName
+            // столбецДатаToolStripMenuItem1
             // 
-            labelName.AutoSize = true;
-            labelName.Location = new Point(87, 38);
-            labelName.Name = "labelName";
-            labelName.Size = new Size(62, 15);
-            labelName.TabIndex = 15;
-            labelName.Text = "Название:";
+            this.столбецДатаToolStripMenuItem1.Name = "столбецДатаToolStripMenuItem1";
+            this.столбецДатаToolStripMenuItem1.Size = new System.Drawing.Size(211, 22);
+            this.столбецДатаToolStripMenuItem1.Text = "Столбец \"ID\"";
+            this.столбецДатаToolStripMenuItem1.Click += new System.EventHandler(this.столбецДатаToolStripMenuItem1_Click);
             // 
-            // textBoxFilePath
+            // pictureBoxAbout_GAM
             // 
-            textBoxFilePath.Location = new Point(176, 5);
-            textBoxFilePath.Name = "textBoxFilePath";
-            textBoxFilePath.ReadOnly = true;
-            textBoxFilePath.Size = new Size(372, 23);
-            textBoxFilePath.TabIndex = 14;
+            this.pictureBoxAbout_GAM.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBoxAbout_GAM.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxAbout_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxAbout_GAM.ErrorImage = null;
+            this.pictureBoxAbout_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAbout_GAM.Image")));
+            this.pictureBoxAbout_GAM.InitialImage = null;
+            this.pictureBoxAbout_GAM.Location = new System.Drawing.Point(660, 6);
+            this.pictureBoxAbout_GAM.Name = "pictureBoxAbout_GAM";
+            this.pictureBoxAbout_GAM.Size = new System.Drawing.Size(34, 34);
+            this.pictureBoxAbout_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBoxAbout_GAM.TabIndex = 1;
+            this.pictureBoxAbout_GAM.TabStop = false;
             // 
-            // labelFilePath
+            // pictureBoxSave_GAM
             // 
-            labelFilePath.AutoSize = true;
-            labelFilePath.Location = new Point(87, 8);
-            labelFilePath.Name = "labelFilePath";
-            labelFilePath.Size = new Size(83, 15);
-            labelFilePath.TabIndex = 13;
-            labelFilePath.Text = "Путь к файлу:";
+            this.pictureBoxSave_GAM.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxSave_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxSave_GAM.ErrorImage = null;
+            this.pictureBoxSave_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSave_GAM.Image")));
+            this.pictureBoxSave_GAM.InitialImage = null;
+            this.pictureBoxSave_GAM.Location = new System.Drawing.Point(151, 6);
+            this.pictureBoxSave_GAM.Name = "pictureBoxSave_GAM";
+            this.pictureBoxSave_GAM.Size = new System.Drawing.Size(34, 34);
+            this.pictureBoxSave_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxSave_GAM.TabIndex = 1;
+            this.pictureBoxSave_GAM.TabStop = false;
             // 
-            // panelCntrl
+            // pictureBoxManagement_GAM
             // 
-            panelCntrl.BorderStyle = BorderStyle.Fixed3D;
-            panelCntrl.Controls.Add(buttonDeleteFile);
-            panelCntrl.Controls.Add(buttonAddFile);
-            panelCntrl.Controls.Add(buttonHelp);
-            panelCntrl.Location = new Point(676, 504);
-            panelCntrl.Name = "panelCntrl";
-            panelCntrl.Size = new Size(328, 72);
-            panelCntrl.TabIndex = 3;
+            this.pictureBoxManagement_GAM.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.pictureBoxManagement_GAM.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxManagement_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxManagement_GAM.ErrorImage = null;
+            this.pictureBoxManagement_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxManagement_GAM.Image")));
+            this.pictureBoxManagement_GAM.InitialImage = null;
+            this.pictureBoxManagement_GAM.Location = new System.Drawing.Point(528, 6);
+            this.pictureBoxManagement_GAM.Name = "pictureBoxManagement_GAM";
+            this.pictureBoxManagement_GAM.Size = new System.Drawing.Size(34, 34);
+            this.pictureBoxManagement_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxManagement_GAM.TabIndex = 1;
+            this.pictureBoxManagement_GAM.TabStop = false;
             // 
-            // buttonDeleteFile
+            // pictureBoxLoad_GAM
             // 
-            buttonDeleteFile.Location = new Point(123, 3);
-            buttonDeleteFile.Name = "buttonDeleteFile";
-            buttonDeleteFile.Size = new Size(102, 62);
-            buttonDeleteFile.TabIndex = 2;
-            buttonDeleteFile.Text = "Удалить видеофайл";
-            buttonDeleteFile.UseVisualStyleBackColor = true;
-            buttonDeleteFile.Click += buttonDeleteFile_Click;
+            this.pictureBoxLoad_GAM.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxLoad_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxLoad_GAM.ErrorImage = null;
+            this.pictureBoxLoad_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLoad_GAM.Image")));
+            this.pictureBoxLoad_GAM.InitialImage = null;
+            this.pictureBoxLoad_GAM.Location = new System.Drawing.Point(3, 6);
+            this.pictureBoxLoad_GAM.Name = "pictureBoxLoad_GAM";
+            this.pictureBoxLoad_GAM.Size = new System.Drawing.Size(34, 34);
+            this.pictureBoxLoad_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLoad_GAM.TabIndex = 1;
+            this.pictureBoxLoad_GAM.TabStop = false;
             // 
-            // buttonAddFile
+            // buttonAbout_GAM
             // 
-            buttonAddFile.Location = new Point(3, 3);
-            buttonAddFile.Name = "buttonAddFile";
-            buttonAddFile.Size = new Size(114, 62);
-            buttonAddFile.TabIndex = 1;
-            buttonAddFile.Text = "Добавить видеофайл";
-            buttonAddFile.UseVisualStyleBackColor = true;
-            buttonAddFile.Click += buttonAddFile_Click;
+            this.buttonAbout_GAM.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.buttonAbout_GAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.buttonAbout_GAM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAbout_GAM.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonAbout_GAM.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonAbout_GAM.Location = new System.Drawing.Point(700, 6);
+            this.buttonAbout_GAM.Name = "buttonAbout_GAM";
+            this.buttonAbout_GAM.Size = new System.Drawing.Size(93, 34);
+            this.buttonAbout_GAM.TabIndex = 0;
+            this.buttonAbout_GAM.Text = "О программе";
+            this.toolTipButtons_GAM.SetToolTip(this.buttonAbout_GAM, "Информация о разработчике");
+            this.buttonAbout_GAM.UseVisualStyleBackColor = false;
+            this.buttonAbout_GAM.Click += new System.EventHandler(this.buttonAbout_GAM_Click);
+            this.buttonAbout_GAM.MouseEnter += new System.EventHandler(this.buttonAbout_GAM_MouseEnter);
+            this.buttonAbout_GAM.MouseLeave += new System.EventHandler(this.buttonAbout_GAM_MouseLeave);
             // 
-            // buttonHelp
+            // buttonSave_GAM
             // 
-            buttonHelp.Location = new Point(233, 3);
-            buttonHelp.Name = "buttonHelp";
-            buttonHelp.Size = new Size(88, 62);
-            buttonHelp.TabIndex = 0;
-            buttonHelp.Text = "Справка";
-            buttonHelp.UseVisualStyleBackColor = true;
-            buttonHelp.Click += buttonHelp_Click;
+            this.buttonSave_GAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.buttonSave_GAM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSave_GAM.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSave_GAM.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonSave_GAM.Location = new System.Drawing.Point(191, 6);
+            this.buttonSave_GAM.Name = "buttonSave_GAM";
+            this.buttonSave_GAM.Size = new System.Drawing.Size(107, 34);
+            this.buttonSave_GAM.TabIndex = 0;
+            this.buttonSave_GAM.Text = "Сохранить файл";
+            this.toolTipButtons_GAM.SetToolTip(this.buttonSave_GAM, "Сохранить измененный файл");
+            this.buttonSave_GAM.UseVisualStyleBackColor = false;
+            this.buttonSave_GAM.Click += new System.EventHandler(this.buttonSave_GAM_Click);
+            this.buttonSave_GAM.MouseEnter += new System.EventHandler(this.buttonSave_GAM_MouseEnter);
+            this.buttonSave_GAM.MouseLeave += new System.EventHandler(this.buttonSave_GAM_MouseLeave);
             // 
-            // panelPlaylist
+            // buttonManagement_GAM
             // 
-            panelPlaylist.BorderStyle = BorderStyle.Fixed3D;
-            panelPlaylist.Controls.Add(dataGridViewPlaylist);
-            panelPlaylist.Location = new Point(676, 0);
-            panelPlaylist.Name = "panelPlaylist";
-            panelPlaylist.Size = new Size(328, 498);
-            panelPlaylist.TabIndex = 1;
+            this.buttonManagement_GAM.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.buttonManagement_GAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.buttonManagement_GAM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonManagement_GAM.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonManagement_GAM.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonManagement_GAM.Location = new System.Drawing.Point(568, 6);
+            this.buttonManagement_GAM.Name = "buttonManagement_GAM";
+            this.buttonManagement_GAM.Size = new System.Drawing.Size(86, 34);
+            this.buttonManagement_GAM.TabIndex = 0;
+            this.buttonManagement_GAM.Text = "Руководство";
+            this.toolTipButtons_GAM.SetToolTip(this.buttonManagement_GAM, "Открыть краткое руководство по программе");
+            this.buttonManagement_GAM.UseVisualStyleBackColor = false;
+            this.buttonManagement_GAM.Click += new System.EventHandler(this.buttonManagement_GAM_Click);
+            this.buttonManagement_GAM.MouseEnter += new System.EventHandler(this.buttonManagement_GAM_MouseEnter);
+            this.buttonManagement_GAM.MouseLeave += new System.EventHandler(this.buttonManagement_GAM_MouseLeave);
             // 
-            // dataGridViewPlaylist
+            // buttonLoad_GAM
             // 
-            dataGridViewPlaylist.AllowUserToAddRows = false;
-            dataGridViewPlaylist.AllowUserToDeleteRows = false;
-            dataGridViewPlaylist.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewPlaylist.Columns.AddRange(new DataGridViewColumn[] { Column1 });
-            dataGridViewPlaylist.Dock = DockStyle.Fill;
-            dataGridViewPlaylist.Location = new Point(0, 0);
-            dataGridViewPlaylist.Name = "dataGridViewPlaylist";
-            dataGridViewPlaylist.ReadOnly = true;
-            dataGridViewPlaylist.Size = new Size(324, 494);
-            dataGridViewPlaylist.TabIndex = 0;
-            dataGridViewPlaylist.CellContentDoubleClick += dataGridViewPlaylist_CellContentDoubleClick;
-            dataGridViewPlaylist.CellDoubleClick += dataGridViewPlaylist_CellContentDoubleClick;
+            this.buttonLoad_GAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.buttonLoad_GAM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonLoad_GAM.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLoad_GAM.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonLoad_GAM.Location = new System.Drawing.Point(41, 6);
+            this.buttonLoad_GAM.Name = "buttonLoad_GAM";
+            this.buttonLoad_GAM.Size = new System.Drawing.Size(104, 34);
+            this.buttonLoad_GAM.TabIndex = 0;
+            this.buttonLoad_GAM.Text = "Выбрать файл";
+            this.toolTipButtons_GAM.SetToolTip(this.buttonLoad_GAM, "Открыть нужный файл для работы");
+            this.buttonLoad_GAM.UseVisualStyleBackColor = false;
+            this.buttonLoad_GAM.Click += new System.EventHandler(this.buttonLoad_GAM_Click);
+            this.buttonLoad_GAM.MouseEnter += new System.EventHandler(this.buttonLoad_GAM_MouseEnter);
+            this.buttonLoad_GAM.MouseLeave += new System.EventHandler(this.buttonLoad_GAM_MouseLeave);
             // 
-            // Column1
+            // panelDown_GAM
             // 
-            Column1.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            Column1.HeaderText = "Видеотека:";
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
-            Column1.Width = 91;
+            this.panelDown_GAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.panelDown_GAM.Controls.Add(this.buttonGraph_GAM);
+            this.panelDown_GAM.Controls.Add(this.textBoxFilter_GAM);
+            this.panelDown_GAM.Controls.Add(this.textBoxSearch_GAM);
+            this.panelDown_GAM.Controls.Add(this.buttonLeft_GAM);
+            this.panelDown_GAM.Controls.Add(this.buttonRight_GAM);
+            this.panelDown_GAM.Controls.Add(this.buttonSearch_GAM);
+            this.panelDown_GAM.Controls.Add(this.pictureBoxSearch_GAM);
+            this.panelDown_GAM.Controls.Add(this.pictureBoxFilter_GAM);
+            this.panelDown_GAM.Controls.Add(this.menuStripMain_GAM);
+            this.panelDown_GAM.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelDown_GAM.Location = new System.Drawing.Point(0, 412);
+            this.panelDown_GAM.Name = "panelDown_GAM";
+            this.panelDown_GAM.Size = new System.Drawing.Size(804, 49);
+            this.panelDown_GAM.TabIndex = 1;
+            // 
+            // buttonGraph_GAM
+            // 
+            this.buttonGraph_GAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.buttonGraph_GAM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonGraph_GAM.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonGraph_GAM.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonGraph_GAM.Location = new System.Drawing.Point(469, 7);
+            this.buttonGraph_GAM.Name = "buttonGraph_GAM";
+            this.buttonGraph_GAM.Size = new System.Drawing.Size(75, 33);
+            this.buttonGraph_GAM.TabIndex = 3;
+            this.buttonGraph_GAM.Text = "График";
+            this.toolTipButtons_GAM.SetToolTip(this.buttonGraph_GAM, "Перейти в среду для отображения графиков");
+            this.buttonGraph_GAM.UseVisualStyleBackColor = false;
+            this.buttonGraph_GAM.Click += new System.EventHandler(this.buttonGraph_GAM_Click);
+            this.buttonGraph_GAM.MouseEnter += new System.EventHandler(this.buttonGraph_GAM_MouseEnter);
+            this.buttonGraph_GAM.MouseLeave += new System.EventHandler(this.buttonGraph_GAM_MouseLeave);
+            // 
+            // textBoxFilter_GAM
+            // 
+            this.textBoxFilter_GAM.BackColor = System.Drawing.Color.DarkGray;
+            this.textBoxFilter_GAM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxFilter_GAM.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.textBoxFilter_GAM.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.textBoxFilter_GAM.Location = new System.Drawing.Point(112, 7);
+            this.textBoxFilter_GAM.Multiline = true;
+            this.textBoxFilter_GAM.Name = "textBoxFilter_GAM";
+            this.textBoxFilter_GAM.Size = new System.Drawing.Size(111, 33);
+            this.textBoxFilter_GAM.TabIndex = 2;
+            // 
+            // textBoxSearch_GAM
+            // 
+            this.textBoxSearch_GAM.BackColor = System.Drawing.Color.DarkGray;
+            this.textBoxSearch_GAM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBoxSearch_GAM.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.textBoxSearch_GAM.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.textBoxSearch_GAM.Location = new System.Drawing.Point(351, 7);
+            this.textBoxSearch_GAM.Multiline = true;
+            this.textBoxSearch_GAM.Name = "textBoxSearch_GAM";
+            this.textBoxSearch_GAM.Size = new System.Drawing.Size(111, 33);
+            this.textBoxSearch_GAM.TabIndex = 2;
+            // 
+            // buttonLeft_GAM
+            // 
+            this.buttonLeft_GAM.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.buttonLeft_GAM.BackColor = System.Drawing.Color.Transparent;
+            this.buttonLeft_GAM.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonLeft_GAM.BackgroundImage")));
+            this.buttonLeft_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonLeft_GAM.FlatAppearance.BorderSize = 0;
+            this.buttonLeft_GAM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLeft_GAM.Location = new System.Drawing.Point(718, 6);
+            this.buttonLeft_GAM.Name = "buttonLeft_GAM";
+            this.buttonLeft_GAM.Size = new System.Drawing.Size(34, 34);
+            this.buttonLeft_GAM.TabIndex = 0;
+            this.toolTipButtons_GAM.SetToolTip(this.buttonLeft_GAM, "Перелистнуть влево");
+            this.buttonLeft_GAM.UseVisualStyleBackColor = false;
+            this.buttonLeft_GAM.Click += new System.EventHandler(this.buttonLeft_GAM_Click);
+            this.buttonLeft_GAM.MouseEnter += new System.EventHandler(this.buttonLeft_GAM_MouseEnter);
+            this.buttonLeft_GAM.MouseLeave += new System.EventHandler(this.buttonLeft_GAM_MouseLeave);
+            // 
+            // buttonRight_GAM
+            // 
+            this.buttonRight_GAM.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.buttonRight_GAM.BackColor = System.Drawing.Color.Transparent;
+            this.buttonRight_GAM.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRight_GAM.BackgroundImage")));
+            this.buttonRight_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonRight_GAM.FlatAppearance.BorderSize = 0;
+            this.buttonRight_GAM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRight_GAM.Location = new System.Drawing.Point(758, 6);
+            this.buttonRight_GAM.Name = "buttonRight_GAM";
+            this.buttonRight_GAM.Size = new System.Drawing.Size(34, 34);
+            this.buttonRight_GAM.TabIndex = 0;
+            this.toolTipButtons_GAM.SetToolTip(this.buttonRight_GAM, "Перелистнуть вправо");
+            this.buttonRight_GAM.UseVisualStyleBackColor = false;
+            this.buttonRight_GAM.Click += new System.EventHandler(this.buttonRight_GAM_Click);
+            this.buttonRight_GAM.MouseEnter += new System.EventHandler(this.buttonRight_GAM_MouseEnter);
+            this.buttonRight_GAM.MouseLeave += new System.EventHandler(this.buttonRight_GAM_MouseLeave);
+            // 
+            // buttonSearch_GAM
+            // 
+            this.buttonSearch_GAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.buttonSearch_GAM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonSearch_GAM.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buttonSearch_GAM.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonSearch_GAM.Location = new System.Drawing.Point(272, 6);
+            this.buttonSearch_GAM.Name = "buttonSearch_GAM";
+            this.buttonSearch_GAM.Size = new System.Drawing.Size(75, 34);
+            this.buttonSearch_GAM.TabIndex = 0;
+            this.buttonSearch_GAM.Text = "Поиск";
+            this.toolTipButtons_GAM.SetToolTip(this.buttonSearch_GAM, "Выполнить поиск по заданному тексту");
+            this.buttonSearch_GAM.UseVisualStyleBackColor = false;
+            this.buttonSearch_GAM.Click += new System.EventHandler(this.buttonSearch_GAM_Click);
+            this.buttonSearch_GAM.MouseEnter += new System.EventHandler(this.buttonSearch_GAM_MouseEnter);
+            this.buttonSearch_GAM.MouseLeave += new System.EventHandler(this.buttonSearch_GAM_MouseLeave);
+            // 
+            // pictureBoxSearch_GAM
+            // 
+            this.pictureBoxSearch_GAM.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxSearch_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxSearch_GAM.ErrorImage = null;
+            this.pictureBoxSearch_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSearch_GAM.Image")));
+            this.pictureBoxSearch_GAM.InitialImage = null;
+            this.pictureBoxSearch_GAM.Location = new System.Drawing.Point(232, 6);
+            this.pictureBoxSearch_GAM.Name = "pictureBoxSearch_GAM";
+            this.pictureBoxSearch_GAM.Size = new System.Drawing.Size(34, 34);
+            this.pictureBoxSearch_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSearch_GAM.TabIndex = 1;
+            this.pictureBoxSearch_GAM.TabStop = false;
+            // 
+            // pictureBoxFilter_GAM
+            // 
+            this.pictureBoxFilter_GAM.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxFilter_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxFilter_GAM.ErrorImage = null;
+            this.pictureBoxFilter_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFilter_GAM.Image")));
+            this.pictureBoxFilter_GAM.InitialImage = null;
+            this.pictureBoxFilter_GAM.Location = new System.Drawing.Point(3, 6);
+            this.pictureBoxFilter_GAM.Name = "pictureBoxFilter_GAM";
+            this.pictureBoxFilter_GAM.Size = new System.Drawing.Size(34, 34);
+            this.pictureBoxFilter_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxFilter_GAM.TabIndex = 1;
+            this.pictureBoxFilter_GAM.TabStop = false;
+            // 
+            // menuStripMain_GAM
+            // 
+            this.menuStripMain_GAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.menuStripMain_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.menuStripMain_GAM.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStripMain_GAM.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.фильтрToolStripMenuItem});
+            this.menuStripMain_GAM.Location = new System.Drawing.Point(41, 11);
+            this.menuStripMain_GAM.Name = "menuStripMain_GAM";
+            this.menuStripMain_GAM.Size = new System.Drawing.Size(68, 24);
+            this.menuStripMain_GAM.TabIndex = 4;
+            // 
+            // фильтрToolStripMenuItem
+            // 
+            this.фильтрToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.фильтрToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.названиеToolStripMenuItem,
+            this.весToolStripMenuItem,
+            this.длительностьToolStripMenuItem,
+            this.форматToolStripMenuItem,
+            this.категорияToolStripMenuItem,
+            this.iDToolStripMenuItem});
+            this.фильтрToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.фильтрToolStripMenuItem.Name = "фильтрToolStripMenuItem";
+            this.фильтрToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.фильтрToolStripMenuItem.Text = "Фильтр";
+            // 
+            // названиеToolStripMenuItem
+            // 
+            this.названиеToolStripMenuItem.Name = "названиеToolStripMenuItem";
+            this.названиеToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.названиеToolStripMenuItem.Text = "Название";
+            this.названиеToolStripMenuItem.Click += new System.EventHandler(this.названиеToolStripMenuItem_Click);
+            // 
+            // весToolStripMenuItem
+            // 
+            this.весToolStripMenuItem.Name = "весToolStripMenuItem";
+            this.весToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.весToolStripMenuItem.Text = "Вес";
+            this.весToolStripMenuItem.Click += new System.EventHandler(this.весToolStripMenuItem_Click);
+            // 
+            // длительностьToolStripMenuItem
+            // 
+            this.длительностьToolStripMenuItem.Name = "длительностьToolStripMenuItem";
+            this.длительностьToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.длительностьToolStripMenuItem.Text = "Длительность";
+            this.длительностьToolStripMenuItem.Click += new System.EventHandler(this.длительностьToolStripMenuItem_Click);
+            // 
+            // форматToolStripMenuItem
+            // 
+            this.форматToolStripMenuItem.Name = "форматToolStripMenuItem";
+            this.форматToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.форматToolStripMenuItem.Text = "Формат";
+            this.форматToolStripMenuItem.Click += new System.EventHandler(this.форматToolStripMenuItem_Click);
+            // 
+            // категорияToolStripMenuItem
+            // 
+            this.категорияToolStripMenuItem.Name = "категорияToolStripMenuItem";
+            this.категорияToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.категорияToolStripMenuItem.Text = "Категория";
+            this.категорияToolStripMenuItem.Click += new System.EventHandler(this.категорияToolStripMenuItem_Click);
+            // 
+            // iDToolStripMenuItem
+            // 
+            this.iDToolStripMenuItem.Name = "iDToolStripMenuItem";
+            this.iDToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.iDToolStripMenuItem.Text = "ID";
+            this.iDToolStripMenuItem.Click += new System.EventHandler(this.iDToolStripMenuItem_Click);
+            // 
+            // panelMiddle_GAM
+            // 
+            this.panelMiddle_GAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.panelMiddle_GAM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelMiddle_GAM.Controls.Add(this.groupBoxBase_GAM);
+            this.panelMiddle_GAM.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMiddle_GAM.Location = new System.Drawing.Point(0, 84);
+            this.panelMiddle_GAM.Name = "panelMiddle_GAM";
+            this.panelMiddle_GAM.Size = new System.Drawing.Size(804, 328);
+            this.panelMiddle_GAM.TabIndex = 2;
+            // 
+            // groupBoxBase_GAM
+            // 
+            this.groupBoxBase_GAM.Controls.Add(this.dataGridViewBase_GAM);
+            this.groupBoxBase_GAM.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBoxBase_GAM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.groupBoxBase_GAM.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBoxBase_GAM.Location = new System.Drawing.Point(0, 0);
+            this.groupBoxBase_GAM.Name = "groupBoxBase_GAM";
+            this.groupBoxBase_GAM.Size = new System.Drawing.Size(800, 324);
+            this.groupBoxBase_GAM.TabIndex = 0;
+            this.groupBoxBase_GAM.TabStop = false;
+            this.groupBoxBase_GAM.Text = "Данные";
+            // 
+            // dataGridViewBase_GAM
+            // 
+            this.dataGridViewBase_GAM.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewBase_GAM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dataGridViewBase_GAM.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBase_GAM.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewBase_GAM.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewBase_GAM.ColumnHeadersVisible = false;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewBase_GAM.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewBase_GAM.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewBase_GAM.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.dataGridViewBase_GAM.Location = new System.Drawing.Point(3, 16);
+            this.dataGridViewBase_GAM.Name = "dataGridViewBase_GAM";
+            this.dataGridViewBase_GAM.RowHeadersVisible = false;
+            this.dataGridViewBase_GAM.Size = new System.Drawing.Size(794, 305);
+            this.dataGridViewBase_GAM.TabIndex = 0;
+            // 
+            // toolTipButtons_GAM
+            // 
+            this.toolTipButtons_GAM.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTipButtons_GAM.ToolTipTitle = "Подсказка";
             // 
             // FormMain
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1004, 576);
-            Controls.Add(panelCntrl);
-            Controls.Add(panelInfo);
-            Controls.Add(panelPlaylist);
-            Controls.Add(panelWMP);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Name = "FormMain";
-            Text = "Видеотека";
-            Activated += FormMain_Activated;
-            panelWMP.ResumeLayout(false);
-            (this.WMP as System.ComponentModel.ISupportInitialize).EndInit();
-            panelInfo.ResumeLayout(false);
-            panelInfo.PerformLayout();
-            panelCntrl.ResumeLayout(false);
-            panelPlaylist.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridViewPlaylist).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gray;
+            this.ClientSize = new System.Drawing.Size(804, 461);
+            this.Controls.Add(this.panelMiddle_GAM);
+            this.Controls.Add(this.panelDown_GAM);
+            this.Controls.Add(this.panelUpper_GAM);
+            this.MainMenuStrip = this.menuStripMain_GAM;
+            this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Каталог видеоклипов";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.panelUpper_GAM.ResumeLayout(false);
+            this.panelUpper_GAM.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSort_GAM)).EndInit();
+            this.menuStripSort_GAM.ResumeLayout(false);
+            this.menuStripSort_GAM.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAbout_GAM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSave_GAM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxManagement_GAM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoad_GAM)).EndInit();
+            this.panelDown_GAM.ResumeLayout(false);
+            this.panelDown_GAM.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch_GAM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFilter_GAM)).EndInit();
+            this.menuStripMain_GAM.ResumeLayout(false);
+            this.menuStripMain_GAM.PerformLayout();
+            this.panelMiddle_GAM.ResumeLayout(false);
+            this.groupBoxBase_GAM.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBase_GAM)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+        private System.Windows.Forms.OpenFileDialog openFileDialogMain_GAM;
+        private System.Windows.Forms.Panel panelUpper_GAM;
+        private System.Windows.Forms.PictureBox pictureBoxLoad_GAM;
+        private System.Windows.Forms.Button buttonSave_GAM;
+        private System.Windows.Forms.Button buttonLoad_GAM;
+        private System.Windows.Forms.Panel panelDown_GAM;
+        private System.Windows.Forms.Panel panelMiddle_GAM;
+        private System.Windows.Forms.PictureBox pictureBoxSave_GAM;
+        private System.Windows.Forms.PictureBox pictureBoxAbout_GAM;
+        private System.Windows.Forms.PictureBox pictureBoxManagement_GAM;
+        private System.Windows.Forms.Button buttonAbout_GAM;
+        private System.Windows.Forms.Button buttonManagement_GAM;
+        private System.Windows.Forms.Button buttonLeft_GAM;
+        private System.Windows.Forms.Button buttonRight_GAM;
+        private System.Windows.Forms.PictureBox pictureBoxFilter_GAM;
+        private System.Windows.Forms.GroupBox groupBoxBase_GAM;
+        private System.Windows.Forms.DataGridView dataGridViewBase_GAM;
+        private System.Windows.Forms.SaveFileDialog saveFileDialogMain_GAM;
+        private System.Windows.Forms.Button buttonSearch_GAM;
+        private System.Windows.Forms.PictureBox pictureBoxSearch_GAM;
+        private System.Windows.Forms.MenuStrip menuStripSort_GAM;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemMain_GAM;
+        private System.Windows.Forms.ToolStripMenuItem сортировкаToolStripMenuItemMain_GAM;
+        private System.Windows.Forms.ToolStripMenuItem поУбываниюToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem столбецДлительностьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem столбецВесToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem столбецДатаToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem столбецIDToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem столбецВесToolStripMenuItem;
+        private System.Windows.Forms.Button buttonReset_GAM;
+        private System.Windows.Forms.PictureBox pictureBoxSort_GAM;
+        private System.Windows.Forms.TextBox textBoxSearch_GAM;
+        private System.Windows.Forms.TextBox textBoxFilter_GAM;
+        private System.Windows.Forms.ToolTip toolTipButtons_GAM;
+        private System.Windows.Forms.Button buttonGraph_GAM;
+        private System.Windows.Forms.MenuStrip menuStripMain_GAM;
+        private System.Windows.Forms.ToolStripMenuItem фильтрToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem названиеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem весToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem длительностьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem форматToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem категорияToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iDToolStripMenuItem;
+        private System.Windows.Forms.Button buttonMenu_GAM;
 
-        private Panel panelWMP;
-        private AxWMPLib.AxWindowsMediaPlayer WMP;
-        private Panel panelInfo;
-        private Panel panelCntrl;
-        private Panel panelPlaylist;
-        private DataGridView dataGridViewPlaylist;
-        private Button buttonAddFile;
-        private Button buttonHelp;
-        private DataGridViewTextBoxColumn Column1;
-        private TextBox textBoxDesc;
-        private Label labelDesc;
-        private Label labelS;
-        private TextBox textBoxS;
-        private Label labelM;
-        private TextBox textBoxM;
-        private Label labelH;
-        private TextBox textBoxH;
-        private Label labelDuration;
-        private TextBox textBoxName;
-        private Label labelName;
-        private TextBox textBoxFilePath;
-        private Label labelFilePath;
-        private Button buttonDeleteFile;
+
     }
 }
