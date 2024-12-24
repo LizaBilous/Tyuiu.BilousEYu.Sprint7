@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tyuiu.BilousEYu.Sprint7.Project.V9.Lib;
 
 namespace Tyuiu.BilousEYu.Sprint7.Project.V9
 {
@@ -19,30 +20,21 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
 
         private void pictureBoxLoad_GAM_Click(object sender, EventArgs e)
         {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
+                openFileDialog.FilterIndex = 1;
 
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = openFileDialog.FileName;
+                    // Логика загрузки файла
+                }
+            }
         }
 
-        private void pictureBoxSave_GAM_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBoxSort_GAM_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBoxLeft_GAM_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBoxRight_GAM_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBoxSearch_GAM_Click(object sender, EventArgs e)
+        private void panelManual_GAM_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -1,7 +1,10 @@
-﻿namespace Tyuiu.BilousEYu.Sprint7.Project.V9
+﻿using System.ComponentModel;
+
+namespace Tyuiu.BilousEYu.Sprint7.Project.V9
 {
     partial class FormManual
-    { /// <summary>
+    { 
+      /// <summary>
       /// Required designer variable.
       /// </summary>
         private System.ComponentModel.IContainer components = null;
@@ -27,265 +30,236 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormManual));
-            this.panelIcons_GAM = new System.Windows.Forms.Panel();
-            this.pictureBoxManagement_GAM = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLoad_GAM = new System.Windows.Forms.PictureBox();
-            this.pictureBoxSave_GAM = new System.Windows.Forms.PictureBox();
-            this.pictureBoxAbout_GAM = new System.Windows.Forms.PictureBox();
-            this.pictureBoxSort_GAM = new System.Windows.Forms.PictureBox();
-            this.pictureBoxFilter_GAM = new System.Windows.Forms.PictureBox();
-            this.pictureBoxRight_GAM = new System.Windows.Forms.PictureBox();
-            this.pictureBoxSearch_GAM = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLeft_GAM = new System.Windows.Forms.PictureBox();
-            this.panelManual_GAM = new System.Windows.Forms.Panel();
-            this.splitterIconsAndText_GAM = new System.Windows.Forms.Splitter();
-            this.textBoxManual_GAM = new System.Windows.Forms.TextBox();
-            this.panelIcons_GAM.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxManagement_GAM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoad_GAM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSave_GAM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAbout_GAM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSort_GAM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFilter_GAM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRight_GAM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch_GAM)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeft_GAM)).BeginInit();
-            this.panelManual_GAM.SuspendLayout();
-            this.SuspendLayout();
+            panelIcons_GAM = new Panel();
+            pictureBoxManagement_GAM = new PictureBox();
+            pictureBoxLoad_GAM = new PictureBox();
+            pictureBoxSave_GAM = new PictureBox();
+            pictureBoxAbout_GAM = new PictureBox();
+            pictureBoxSort_GAM = new PictureBox();
+            pictureBoxFilter_GAM = new PictureBox();
+            pictureBoxRight_GAM = new PictureBox();
+            pictureBoxSearch_GAM = new PictureBox();
+            pictureBoxLeft_GAM = new PictureBox();
+            panelManual_GAM = new Panel();
+            splitterIconsAndText_GAM = new Splitter();
+            textBoxManual_GAM = new TextBox();
+            panelIcons_GAM.SuspendLayout();
+            ((ISupportInitialize)pictureBoxManagement_GAM).BeginInit();
+            ((ISupportInitialize)pictureBoxLoad_GAM).BeginInit();
+            ((ISupportInitialize)pictureBoxSave_GAM).BeginInit();
+            ((ISupportInitialize)pictureBoxAbout_GAM).BeginInit();
+            ((ISupportInitialize)pictureBoxSort_GAM).BeginInit();
+            ((ISupportInitialize)pictureBoxFilter_GAM).BeginInit();
+            ((ISupportInitialize)pictureBoxRight_GAM).BeginInit();
+            ((ISupportInitialize)pictureBoxSearch_GAM).BeginInit();
+            ((ISupportInitialize)pictureBoxLeft_GAM).BeginInit();
+            panelManual_GAM.SuspendLayout();
+            SuspendLayout();
             // 
             // panelIcons_GAM
             // 
-            this.panelIcons_GAM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelIcons_GAM.Controls.Add(this.pictureBoxManagement_GAM);
-            this.panelIcons_GAM.Controls.Add(this.pictureBoxLoad_GAM);
-            this.panelIcons_GAM.Controls.Add(this.pictureBoxSave_GAM);
-            this.panelIcons_GAM.Controls.Add(this.pictureBoxAbout_GAM);
-            this.panelIcons_GAM.Controls.Add(this.pictureBoxSort_GAM);
-            this.panelIcons_GAM.Controls.Add(this.pictureBoxFilter_GAM);
-            this.panelIcons_GAM.Controls.Add(this.pictureBoxRight_GAM);
-            this.panelIcons_GAM.Controls.Add(this.pictureBoxSearch_GAM);
-            this.panelIcons_GAM.Controls.Add(this.pictureBoxLeft_GAM);
-            this.panelIcons_GAM.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelIcons_GAM.Location = new System.Drawing.Point(0, 0);
-            this.panelIcons_GAM.MinimumSize = new System.Drawing.Size(42, 361);
-            this.panelIcons_GAM.Name = "panelIcons_GAM";
-            this.panelIcons_GAM.Size = new System.Drawing.Size(42, 361);
-            this.panelIcons_GAM.TabIndex = 4;
+            panelIcons_GAM.BorderStyle = BorderStyle.FixedSingle;
+            panelIcons_GAM.Controls.Add(pictureBoxManagement_GAM);
+            panelIcons_GAM.Controls.Add(pictureBoxLoad_GAM);
+            panelIcons_GAM.Controls.Add(pictureBoxSave_GAM);
+            panelIcons_GAM.Controls.Add(pictureBoxAbout_GAM);
+            panelIcons_GAM.Controls.Add(pictureBoxSort_GAM);
+            panelIcons_GAM.Controls.Add(pictureBoxFilter_GAM);
+            panelIcons_GAM.Controls.Add(pictureBoxRight_GAM);
+            panelIcons_GAM.Controls.Add(pictureBoxSearch_GAM);
+            panelIcons_GAM.Controls.Add(pictureBoxLeft_GAM);
+            panelIcons_GAM.Dock = DockStyle.Left;
+            panelIcons_GAM.Location = new Point(0, 0);
+            panelIcons_GAM.Name = "panelIcons_GAM";
+            panelIcons_GAM.Size = new Size(55, 555);
+            panelIcons_GAM.TabIndex = 1;
             // 
             // pictureBoxManagement_GAM
             // 
-            this.pictureBoxManagement_GAM.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBoxManagement_GAM.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxManagement_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxManagement_GAM.ErrorImage = null;
-            this.pictureBoxManagement_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxManagement_GAM.Image")));
-            this.pictureBoxManagement_GAM.InitialImage = null;
-            this.pictureBoxManagement_GAM.Location = new System.Drawing.Point(3, 324);
-            this.pictureBoxManagement_GAM.Name = "pictureBoxManagement_GAM";
-            this.pictureBoxManagement_GAM.Size = new System.Drawing.Size(34, 34);
-            this.pictureBoxManagement_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxManagement_GAM.TabIndex = 11;
-            this.pictureBoxManagement_GAM.TabStop = false;
+            pictureBoxManagement_GAM.Location = new Point(0, 0);
+            pictureBoxManagement_GAM.Name = "pictureBoxManagement_GAM";
+            pictureBoxManagement_GAM.Size = new Size(45, 52);
+            pictureBoxManagement_GAM.TabIndex = 0;
+            pictureBoxManagement_GAM.TabStop = false;
+            pictureBoxManagement_GAM.Click += pictureBoxManagement_GAM_Click;
             // 
             // pictureBoxLoad_GAM
             // 
-            this.pictureBoxLoad_GAM.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBoxLoad_GAM.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxLoad_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxLoad_GAM.ErrorImage = null;
-            this.pictureBoxLoad_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLoad_GAM.Image")));
-            this.pictureBoxLoad_GAM.InitialImage = null;
-            this.pictureBoxLoad_GAM.Location = new System.Drawing.Point(3, 4);
-            this.pictureBoxLoad_GAM.Name = "pictureBoxLoad_GAM";
-            this.pictureBoxLoad_GAM.Size = new System.Drawing.Size(34, 34);
-            this.pictureBoxLoad_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLoad_GAM.TabIndex = 2;
-            this.pictureBoxLoad_GAM.TabStop = false;
-            this.pictureBoxLoad_GAM.Click += new System.EventHandler(this.pictureBoxLoad_GAM_Click);
+            pictureBoxLoad_GAM.Location = new Point(0, 0);
+            pictureBoxLoad_GAM.Name = "pictureBoxLoad_GAM";
+            pictureBoxLoad_GAM.Size = new Size(45, 52);
+            pictureBoxLoad_GAM.TabIndex = 1;
+            pictureBoxLoad_GAM.TabStop = false;
+            pictureBoxLoad_GAM.Click += pictureBoxLoad_GAM_Click;
             // 
             // pictureBoxSave_GAM
             // 
-            this.pictureBoxSave_GAM.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBoxSave_GAM.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxSave_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxSave_GAM.ErrorImage = null;
-            this.pictureBoxSave_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSave_GAM.Image")));
-            this.pictureBoxSave_GAM.InitialImage = null;
-            this.pictureBoxSave_GAM.Location = new System.Drawing.Point(3, 44);
-            this.pictureBoxSave_GAM.Name = "pictureBoxSave_GAM";
-            this.pictureBoxSave_GAM.Size = new System.Drawing.Size(34, 34);
-            this.pictureBoxSave_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxSave_GAM.TabIndex = 3;
-            this.pictureBoxSave_GAM.TabStop = false;
-            this.pictureBoxSave_GAM.Click += new System.EventHandler(this.pictureBoxSave_GAM_Click);
+            pictureBoxSave_GAM.Location = new Point(0, 0);
+            pictureBoxSave_GAM.Name = "pictureBoxSave_GAM";
+            pictureBoxSave_GAM.Size = new Size(45, 52);
+            pictureBoxSave_GAM.TabIndex = 2;
+            pictureBoxSave_GAM.TabStop = false;
+            pictureBoxSave_GAM.Click += pictureBoxSave_GAM_Click;
             // 
             // pictureBoxAbout_GAM
             // 
-            this.pictureBoxAbout_GAM.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBoxAbout_GAM.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxAbout_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxAbout_GAM.ErrorImage = null;
-            this.pictureBoxAbout_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAbout_GAM.Image")));
-            this.pictureBoxAbout_GAM.InitialImage = null;
-            this.pictureBoxAbout_GAM.Location = new System.Drawing.Point(3, 284);
-            this.pictureBoxAbout_GAM.Name = "pictureBoxAbout_GAM";
-            this.pictureBoxAbout_GAM.Size = new System.Drawing.Size(34, 34);
-            this.pictureBoxAbout_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxAbout_GAM.TabIndex = 10;
-            this.pictureBoxAbout_GAM.TabStop = false;
+            pictureBoxAbout_GAM.Location = new Point(0, 0);
+            pictureBoxAbout_GAM.Name = "pictureBoxAbout_GAM";
+            pictureBoxAbout_GAM.Size = new Size(45, 52);
+            pictureBoxAbout_GAM.TabIndex = 3;
+            pictureBoxAbout_GAM.TabStop = false;
+            pictureBoxAbout_GAM.Click += pictureBoxAbout_GAM_Click;
             // 
             // pictureBoxSort_GAM
             // 
-            this.pictureBoxSort_GAM.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBoxSort_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSort_GAM.Image")));
-            this.pictureBoxSort_GAM.Location = new System.Drawing.Point(3, 84);
-            this.pictureBoxSort_GAM.Name = "pictureBoxSort_GAM";
-            this.pictureBoxSort_GAM.Size = new System.Drawing.Size(34, 34);
-            this.pictureBoxSort_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxSort_GAM.TabIndex = 6;
-            this.pictureBoxSort_GAM.TabStop = false;
-            this.pictureBoxSort_GAM.Click += new System.EventHandler(this.pictureBoxSort_GAM_Click);
+            pictureBoxSort_GAM.Location = new Point(0, 0);
+            pictureBoxSort_GAM.Name = "pictureBoxSort_GAM";
+            pictureBoxSort_GAM.Size = new Size(45, 52);
+            pictureBoxSort_GAM.TabIndex = 4;
+            pictureBoxSort_GAM.TabStop = false;
+            pictureBoxSort_GAM.Click += pictureBoxSort_GAM_Click;
             // 
             // pictureBoxFilter_GAM
             // 
-            this.pictureBoxFilter_GAM.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBoxFilter_GAM.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxFilter_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxFilter_GAM.ErrorImage = null;
-            this.pictureBoxFilter_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFilter_GAM.Image")));
-            this.pictureBoxFilter_GAM.InitialImage = null;
-            this.pictureBoxFilter_GAM.Location = new System.Drawing.Point(3, 244);
-            this.pictureBoxFilter_GAM.Name = "pictureBoxFilter_GAM";
-            this.pictureBoxFilter_GAM.Size = new System.Drawing.Size(34, 34);
-            this.pictureBoxFilter_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxFilter_GAM.TabIndex = 9;
-            this.pictureBoxFilter_GAM.TabStop = false;
+            pictureBoxFilter_GAM.Location = new Point(0, 0);
+            pictureBoxFilter_GAM.Name = "pictureBoxFilter_GAM";
+            pictureBoxFilter_GAM.Size = new Size(45, 52);
+            pictureBoxFilter_GAM.TabIndex = 5;
+            pictureBoxFilter_GAM.TabStop = false;
+            pictureBoxFilter_GAM.Click += pictureBoxFilter_GAM_Click;
             // 
             // pictureBoxRight_GAM
             // 
-            this.pictureBoxRight_GAM.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBoxRight_GAM.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxRight_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxRight_GAM.ErrorImage = null;
-            this.pictureBoxRight_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxRight_GAM.Image")));
-            this.pictureBoxRight_GAM.InitialImage = null;
-            this.pictureBoxRight_GAM.Location = new System.Drawing.Point(3, 164);
-            this.pictureBoxRight_GAM.Name = "pictureBoxRight_GAM";
-            this.pictureBoxRight_GAM.Size = new System.Drawing.Size(34, 34);
-            this.pictureBoxRight_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxRight_GAM.TabIndex = 9;
-            this.pictureBoxRight_GAM.TabStop = false;
-            this.pictureBoxRight_GAM.Click += new System.EventHandler(this.pictureBoxRight_GAM_Click);
+            pictureBoxRight_GAM.Location = new Point(0, 0);
+            pictureBoxRight_GAM.Name = "pictureBoxRight_GAM";
+            pictureBoxRight_GAM.Size = new Size(45, 52);
+            pictureBoxRight_GAM.TabIndex = 6;
+            pictureBoxRight_GAM.TabStop = false;
+            pictureBoxRight_GAM.Click += pictureBoxRight_GAM_Click;
             // 
             // pictureBoxSearch_GAM
             // 
-            this.pictureBoxSearch_GAM.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBoxSearch_GAM.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxSearch_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxSearch_GAM.ErrorImage = null;
-            this.pictureBoxSearch_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSearch_GAM.Image")));
-            this.pictureBoxSearch_GAM.InitialImage = null;
-            this.pictureBoxSearch_GAM.Location = new System.Drawing.Point(3, 204);
-            this.pictureBoxSearch_GAM.Name = "pictureBoxSearch_GAM";
-            this.pictureBoxSearch_GAM.Size = new System.Drawing.Size(34, 34);
-            this.pictureBoxSearch_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxSearch_GAM.TabIndex = 8;
-            this.pictureBoxSearch_GAM.TabStop = false;
-            this.pictureBoxSearch_GAM.Click += new System.EventHandler(this.pictureBoxSearch_GAM_Click);
+            pictureBoxSearch_GAM.Location = new Point(0, 0);
+            pictureBoxSearch_GAM.Name = "pictureBoxSearch_GAM";
+            pictureBoxSearch_GAM.Size = new Size(45, 52);
+            pictureBoxSearch_GAM.TabIndex = 7;
+            pictureBoxSearch_GAM.TabStop = false;
+            pictureBoxSearch_GAM.Click += pictureBoxSearch_GAM_Click;
             // 
             // pictureBoxLeft_GAM
             // 
-            this.pictureBoxLeft_GAM.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.pictureBoxLeft_GAM.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxLeft_GAM.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxLeft_GAM.ErrorImage = null;
-            this.pictureBoxLeft_GAM.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLeft_GAM.Image")));
-            this.pictureBoxLeft_GAM.InitialImage = null;
-            this.pictureBoxLeft_GAM.Location = new System.Drawing.Point(3, 124);
-            this.pictureBoxLeft_GAM.Name = "pictureBoxLeft_GAM";
-            this.pictureBoxLeft_GAM.Size = new System.Drawing.Size(34, 34);
-            this.pictureBoxLeft_GAM.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLeft_GAM.TabIndex = 9;
-            this.pictureBoxLeft_GAM.TabStop = false;
-            this.pictureBoxLeft_GAM.Click += new System.EventHandler(this.pictureBoxLeft_GAM_Click);
+            pictureBoxLeft_GAM.Location = new Point(0, 0);
+            pictureBoxLeft_GAM.Name = "pictureBoxLeft_GAM";
+            pictureBoxLeft_GAM.Size = new Size(45, 52);
+            pictureBoxLeft_GAM.TabIndex = 8;
+            pictureBoxLeft_GAM.TabStop = false;
+            pictureBoxLeft_GAM.Click += pictureBoxLeft_GAM_Click;
             // 
             // panelManual_GAM
             // 
-            this.panelManual_GAM.Controls.Add(this.splitterIconsAndText_GAM);
-            this.panelManual_GAM.Controls.Add(this.textBoxManual_GAM);
-            this.panelManual_GAM.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelManual_GAM.Location = new System.Drawing.Point(42, 0);
-            this.panelManual_GAM.Name = "panelManual_GAM";
-            this.panelManual_GAM.Size = new System.Drawing.Size(342, 361);
-            this.panelManual_GAM.TabIndex = 5;
+            panelManual_GAM.Controls.Add(splitterIconsAndText_GAM);
+            panelManual_GAM.Controls.Add(textBoxManual_GAM);
+            panelManual_GAM.Dock = DockStyle.Fill;
+            panelManual_GAM.Location = new Point(55, 0);
+            panelManual_GAM.Name = "panelManual_GAM";
+            panelManual_GAM.Size = new Size(457, 555);
+            panelManual_GAM.TabIndex = 0;
+            panelManual_GAM.Paint += panelManual_GAM_Paint;
             // 
             // splitterIconsAndText_GAM
             // 
-            this.splitterIconsAndText_GAM.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.splitterIconsAndText_GAM.Location = new System.Drawing.Point(0, 0);
-            this.splitterIconsAndText_GAM.Name = "splitterIconsAndText_GAM";
-            this.splitterIconsAndText_GAM.Size = new System.Drawing.Size(3, 361);
-            this.splitterIconsAndText_GAM.TabIndex = 3;
-            this.splitterIconsAndText_GAM.TabStop = false;
+            splitterIconsAndText_GAM.Location = new Point(0, 0);
+            splitterIconsAndText_GAM.Name = "splitterIconsAndText_GAM";
+            splitterIconsAndText_GAM.Size = new Size(3, 555);
+            splitterIconsAndText_GAM.TabIndex = 0;
+            splitterIconsAndText_GAM.TabStop = false;
             // 
             // textBoxManual_GAM
             // 
-            this.textBoxManual_GAM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.textBoxManual_GAM.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBoxManual_GAM.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.textBoxManual_GAM.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.textBoxManual_GAM.Location = new System.Drawing.Point(0, 0);
-            this.textBoxManual_GAM.Multiline = true;
-            this.textBoxManual_GAM.Name = "textBoxManual_GAM";
-            this.textBoxManual_GAM.ReadOnly = true;
-            this.textBoxManual_GAM.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxManual_GAM.Size = new System.Drawing.Size(342, 361);
-            this.textBoxManual_GAM.TabIndex = 2;
-            this.textBoxManual_GAM.Text = resources.GetString("textBoxManual_GAM.Text");
+            textBoxManual_GAM.Location = new Point(0, 0);
+            textBoxManual_GAM.Multiline = true;
+            textBoxManual_GAM.Name = "textBoxManual_GAM";
+            textBoxManual_GAM.ReadOnly = true;
+            textBoxManual_GAM.ScrollBars = ScrollBars.Both;
+            textBoxManual_GAM.Size = new Size(100, 27);
+            textBoxManual_GAM.TabIndex = 1;
             // 
             // FormManual
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(384, 361);
-            this.Controls.Add(this.panelManual_GAM);
-            this.Controls.Add(this.panelIcons_GAM);
-            this.Name = "FormManual";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Краткое руководство";
-            this.panelIcons_GAM.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxManagement_GAM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLoad_GAM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSave_GAM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAbout_GAM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSort_GAM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFilter_GAM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRight_GAM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSearch_GAM)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeft_GAM)).EndInit();
-            this.panelManual_GAM.ResumeLayout(false);
-            this.panelManual_GAM.PerformLayout();
-            this.ResumeLayout(false);
-
+            ClientSize = new Size(512, 555);
+            Controls.Add(panelManual_GAM);
+            Controls.Add(panelIcons_GAM);
+            Name = "FormManual";
+            Text = "Краткое руководство";
+            panelIcons_GAM.ResumeLayout(false);
+            ((ISupportInitialize)pictureBoxManagement_GAM).EndInit();
+            ((ISupportInitialize)pictureBoxLoad_GAM).EndInit();
+            ((ISupportInitialize)pictureBoxSave_GAM).EndInit();
+            ((ISupportInitialize)pictureBoxAbout_GAM).EndInit();
+            ((ISupportInitialize)pictureBoxSort_GAM).EndInit();
+            ((ISupportInitialize)pictureBoxFilter_GAM).EndInit();
+            ((ISupportInitialize)pictureBoxRight_GAM).EndInit();
+            ((ISupportInitialize)pictureBoxSearch_GAM).EndInit();
+            ((ISupportInitialize)pictureBoxLeft_GAM).EndInit();
+            panelManual_GAM.ResumeLayout(false);
+            panelManual_GAM.PerformLayout();
+            ResumeLayout(false);
         }
 
-        #endregion
+        private void pictureBoxManagement_GAM_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void pictureBoxSave_GAM_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void pictureBoxAbout_GAM_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void pictureBoxSort_GAM_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void pictureBoxFilter_GAM_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void pictureBoxRight_GAM_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void pictureBoxSearch_GAM_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void pictureBoxLeft_GAM_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
 
         private System.Windows.Forms.Panel panelIcons_GAM;
+        private System.Windows.Forms.PictureBox pictureBoxManagement_GAM;
         private System.Windows.Forms.PictureBox pictureBoxLoad_GAM;
         private System.Windows.Forms.PictureBox pictureBoxSave_GAM;
+        private System.Windows.Forms.PictureBox pictureBoxAbout_GAM;
         private System.Windows.Forms.PictureBox pictureBoxSort_GAM;
+        private System.Windows.Forms.PictureBox pictureBoxFilter_GAM;
         private System.Windows.Forms.PictureBox pictureBoxRight_GAM;
         private System.Windows.Forms.PictureBox pictureBoxSearch_GAM;
         private System.Windows.Forms.PictureBox pictureBoxLeft_GAM;
-        private System.Windows.Forms.PictureBox pictureBoxManagement_GAM;
-        private System.Windows.Forms.PictureBox pictureBoxAbout_GAM;
-        private System.Windows.Forms.PictureBox pictureBoxFilter_GAM;
         private System.Windows.Forms.Panel panelManual_GAM;
         private System.Windows.Forms.Splitter splitterIconsAndText_GAM;
         private System.Windows.Forms.TextBox textBoxManual_GAM;
     }
 
+    #endregion
 }

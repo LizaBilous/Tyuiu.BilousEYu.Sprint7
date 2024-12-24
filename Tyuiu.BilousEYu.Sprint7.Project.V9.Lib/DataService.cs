@@ -4,6 +4,11 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9.Lib
 {
     public class DataService
     {
+        public int[] GetGenreMenucs()
+        {
+            throw new NotImplementedException();
+        }
+
         public string[,] LoadDataSet(string path)
         {
             string[] words = File.ReadAllLines(path, Encoding.GetEncoding(1251));

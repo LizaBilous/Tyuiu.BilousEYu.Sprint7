@@ -21,5 +21,10 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
         {
             this.Close();
         }
+
+        private void FormInformationcs_Load(object sender, EventArgs e)
+        {
+            // Здесь можно добавить логику, если нужно что-то выполнить при загрузке формы
+        }
     }
 }

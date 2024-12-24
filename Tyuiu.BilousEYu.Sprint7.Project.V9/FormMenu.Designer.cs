@@ -1,4 +1,7 @@
-﻿namespace Tyuiu.BilousEYu.Sprint7.Project.V9
+﻿using Tyuiu.BilousEYu.Sprint7.Project.V9.Lib;
+namespace Tyuiu.BilousEYu.Sprint7.Project.V9
+
+
 {
     partial class FormMenu
     {
@@ -28,19 +31,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SuspendLayout();
+            this.SuspendLayout();
             // 
             // FormMenu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Name = "FormMenu";
-            Text = "FormMenu";
-            Load += FormMenu_Load;
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "FormMenu";
+            this.Text = "Меню";
+            this.Load += new System.EventHandler(this.FormMenu_Load);
+            this.ResumeLayout(false);
+        }
+
+        private void FormMenu_Load(object sender, EventArgs e)
+        {
+            ShowMenu(); // Инициализация данных при загрузке формы
         }
 
         #endregion
-    }
+    }  
 }

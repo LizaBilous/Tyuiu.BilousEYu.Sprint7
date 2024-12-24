@@ -54,7 +54,7 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             label1.AutoSize = true;
             label1.Location = new Point(237, 16);
             label1.Name = "label1";
-            label1.Size = new Size(191, 20);
+            label1.Size = new Size(186, 20);
             label1.TabIndex = 1;
             label1.Text = "Разработчик: Билоус Е.Ю.";
             // 
@@ -63,7 +63,7 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             label2.AutoSize = true;
             label2.Location = new Point(237, 36);
             label2.Name = "label2";
-            label2.Size = new Size(138, 20);
+            label2.Size = new Size(149, 20);
             label2.TabIndex = 2;
             label2.Text = "Группа: ИСТНб-24-1";
             // 
@@ -99,7 +99,7 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             label6.AutoSize = true;
             label6.Location = new Point(237, 269);
             label6.Name = "label6";
-            label6.Size = new Size(360, 20);
+            label6.Size = new Size(301, 20);
             label6.TabIndex = 6;
             label6.Text = "Внутреннее имя: Tyuiu.BilousEYu.Sprint7.V9";
             // 
@@ -118,6 +118,7 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(619, 365);
             Controls.Add(buttonOk);
             Controls.Add(label6);
