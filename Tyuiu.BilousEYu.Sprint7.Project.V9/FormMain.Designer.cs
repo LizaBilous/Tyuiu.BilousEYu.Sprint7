@@ -297,7 +297,7 @@
             Text = "Видеотека";
             Activated += FormMain_Activated;
             panelWMP.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)WMP).EndInit();
+            (this.WMP as System.ComponentModel.ISupportInitialize).EndInit();
             panelInfo.ResumeLayout(false);
             panelInfo.PerformLayout();
             panelCntrl.ResumeLayout(false);
