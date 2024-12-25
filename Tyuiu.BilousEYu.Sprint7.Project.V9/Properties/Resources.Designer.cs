@@ -63,9 +63,9 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _14bd120697c78a5c01af159e6bc231e0 {
+        internal static System.Drawing.Bitmap add {
             get {
-                object obj = ResourceManager.GetObject("14bd120697c78a5c01af159e6bc231e0", resourceCulture);
+                object obj = ResourceManager.GetObject("add", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,19 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _5d5c8768aa6ca2cc8c468e67c8595f3b {
+        internal static System.Drawing.Bitmap application_delete {
             get {
-                object obj = ResourceManager.GetObject("5d5c8768aa6ca2cc8c468e67c8595f3b", resourceCulture);
+                object obj = ResourceManager.GetObject("application_delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap help {
+            get {
+                object obj = ResourceManager.GetObject("help", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

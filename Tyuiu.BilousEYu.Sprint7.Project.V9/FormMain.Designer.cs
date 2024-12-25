@@ -88,6 +88,7 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             textBoxFilter_GAM.Name = "textBoxFilter_GAM";
             textBoxFilter_GAM.Size = new Size(195, 76);
             textBoxFilter_GAM.TabIndex = 0;
+            textBoxFilter_GAM.TextChanged += textBoxFilter_GAM_TextChanged;
             // 
             // textBoxSearch_GAM
             // 
@@ -252,6 +253,16 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             groupBoxBase_GAM.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewBase_GAM).EndInit();
             ResumeLayout(false);
+        }
+
+        private void textBoxFilter_GAM_TextChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void dataGridViewBase_GAM_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void ButtonLeft_GAM_Click(object sender, EventArgs e)

@@ -20,13 +20,7 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
         }
 
         DataService ds = new DataService();
-
         string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "DataSet.csv");
-
-        static string openFile;
-        static int rows;
-        static int columns;
-        static string[,] matrix;
 
         private void buttonManagement_GAM_Click(object sender, EventArgs e)
         {
@@ -40,180 +34,63 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             formAbout.ShowDialog();
         }
 
-        private void форматВидеоклипаToolStripMenuItem_Click(object sender, EventArgs e)
+        private void BuildChart(int categoryIndex, string title, Color color)
         {
             pictureBoxWait_GAM.Visible = false;
             chartGraph_GAM.Titles.Clear();
             chartGraph_GAM.Series.Clear();
-            matrix = ds.LoadDataSet(path);
-            rows = matrix.GetLength(0);
-            columns = matrix.GetLength(1);
+
+            string[,] matrix = ds.LoadDataSet(path);
+            if (matrix == null)
+            {
+                MessageBox.Show("Не удалось загрузить данные.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            int rows = matrix.GetLength(0);
             List<string> category = new List<string>();
+
             for (int i = 1; i < rows; i++)
             {
-                category.Add(matrix[i, 3]);
-            }
-            Dictionary<string, int> countByElement = new Dictionary<string, int>();
-
-            foreach (var element in category)
-            {
-                if (countByElement.ContainsKey(element))
-                {
-                    countByElement[element]++;
-                }
-                else
-                {
-                    countByElement[element] = 1;
-                }
+                category.Add(matrix[i, categoryIndex]);
             }
 
-            Chart grafik = chartGraph_GAM;
-            Series series = new Series();
+            Dictionary<string, int> countByElement = category.GroupBy(e => e)
+                                                             .ToDictionary(g => g.Key, g => g.Count());
+
+            Series series = new Series { Color = color, BackGradientStyle = GradientStyle.DiagonalLeft };
+
             foreach (var kvp in countByElement)
             {
                 series.Points.AddXY(kvp.Key, kvp.Value);
             }
-            grafik.Series.Add(series);
-            grafik.Invalidate();
-            grafik.Legends.Clear();
-            series.Color = Color.DarkCyan;
-            series.BackGradientStyle = GradientStyle.DiagonalLeft;
-            string title = "Формат";
-            grafik.Titles.Add(title);
-            this.chartGraph_GAM.ChartAreas[0].AxisX.Title = "Значение";
-            this.chartGraph_GAM.ChartAreas[0].AxisY.Title = "Количество";
+
+            chartGraph_GAM.Series.Add(series);
+            chartGraph_GAM.Invalidate();
+            chartGraph_GAM.Legends.Clear();
+            chartGraph_GAM.Titles.Add(title);
+            chartGraph_GAM.ChartAreas[0].AxisX.Title = "Значение";
+            chartGraph_GAM.ChartAreas[0].AxisY.Title = "Количество";
+        }
+
+        private void форматВидеоклипаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BuildChart(3, "Формат", Color.DarkCyan);
         }
 
         private void категорияВидеоклипаToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pictureBoxWait_GAM.Visible = false;
-            chartGraph_GAM.Titles.Clear();
-            chartGraph_GAM.Series.Clear();
-            matrix = ds.LoadDataSet(path);
-            rows = matrix.GetLength(0);
-            columns = matrix.GetLength(1);
-            List<string> category = new List<string>();
-            for (int i = 1; i < rows; i++)
-            {
-                category.Add(matrix[i, 6]);
-            }
-            Dictionary<string, int> countByElement = new Dictionary<string, int>();
-
-            foreach (var element in category)
-            {
-                if (countByElement.ContainsKey(element))
-                {
-                    countByElement[element]++;
-                }
-                else
-                {
-                    countByElement[element] = 1;
-                }
-            }
-
-            Chart grafik = chartGraph_GAM;
-            Series series = new Series();
-            foreach (var kvp in countByElement)
-            {
-                series.Points.AddXY(kvp.Key, kvp.Value);
-            }
-            grafik.Series.Add(series);
-            grafik.Invalidate();
-            grafik.Legends.Clear();
-            series.Color = Color.Indigo;
-            series.BackGradientStyle = GradientStyle.DiagonalLeft;
-            string title = "Категория";
-            grafik.Titles.Add(title);
-            this.chartGraph_GAM.ChartAreas[0].AxisX.Title = "Значение";
-            this.chartGraph_GAM.ChartAreas[0].AxisY.Title = "Количество";
+            BuildChart(6, "Категория", Color.Indigo);
         }
 
         private void весВидеоклипаToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            pictureBoxWait_GAM.Visible = false;
-            chartGraph_GAM.Titles.Clear();
-            chartGraph_GAM.Series.Clear();
-            matrix = ds.LoadDataSet(path);
-            rows = matrix.GetLength(0);
-            columns = matrix.GetLength(1);
-            List<string> category = new List<string>();
-            for (int i = 1; i < rows; i++)
-            {
-                category.Add(matrix[i, 5]);
-            }
-            Dictionary<string, int> countByElement = new Dictionary<string, int>();
-
-            foreach (var element in category)
-            {
-                if (countByElement.ContainsKey(element))
-                {
-                    countByElement[element]++;
-                }
-                else
-                {
-                    countByElement[element] = 1;
-                }
-            }
-
-            Chart grafik = chartGraph_GAM;
-            Series series = new Series();
-            foreach (var kvp in countByElement)
-            {
-                series.Points.AddXY(kvp.Key, kvp.Value);
-            }
-            grafik.Series.Add(series);
-            grafik.Invalidate();
-            grafik.Legends.Clear();
-            series.Color = Color.RoyalBlue;
-            series.BackGradientStyle = GradientStyle.DiagonalLeft;
-            string title = "Вес";
-            grafik.Titles.Add(title);
-            this.chartGraph_GAM.ChartAreas[0].AxisX.Title = "Значение";
-            this.chartGraph_GAM.ChartAreas[0].AxisY.Title = "Количество";
+            BuildChart(5, "Вес", Color.RoyalBlue);
         }
+
         private void длительностьВидеоклипаToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            pictureBoxWait_GAM.Visible = false;
-            chartGraph_GAM.Titles.Clear();
-            chartGraph_GAM.Series.Clear();
-            matrix = ds.LoadDataSet(path);
-            rows = matrix.GetLength(0);
-            columns = matrix.GetLength(1);
-            List<string> category = new List<string>();
-            for (int i = 1; i < rows; i++)
-            {
-                category.Add(matrix[i, 2]);
-            }
-            Dictionary<string, int> countByElement = new Dictionary<string, int>();
-
-            foreach (var element in category)
-            {
-                if (countByElement.ContainsKey(element))
-                {
-                    countByElement[element]++;
-                }
-                else
-                {
-                    countByElement[element] = 1;
-                }
-            }
-
-            Chart grafik = chartGraph_GAM;
-            Series series = new Series();
-            foreach (var kvp in countByElement)
-            {
-                series.Points.AddXY(kvp.Key, kvp.Value);
-            }
-            grafik.Series.Add(series);
-            grafik.Invalidate();
-            grafik.Legends.Clear();
-            series.Color = Color.DarkSlateGray;
-            series.BackGradientStyle = GradientStyle.DiagonalLeft;
-            string title = "Длительность";
-            grafik.Titles.Add(title);
-            this.chartGraph_GAM.ChartAreas[0].AxisX.Title = "Значение";
-            this.chartGraph_GAM.ChartAreas[0].AxisY.Title = "Количество";
-
+            BuildChart(2, "Длительность", Color.DarkSlateGray);
         }
 
         private void buttonBack_GAM_Click(object sender, EventArgs e)
@@ -221,159 +98,70 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             this.Close();
         }
 
-        private void весВидеоклипаToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void CalculateMinMaxAverage(int categoryIndex, bool isMax)
         {
+            string[,] matrix = ds.LoadDataSet(path);
+            if (matrix == null)
+            {
+                MessageBox.Show("Не удалось загрузить данные.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-            matrix = ds.LoadDataSet(path);
-            rows = matrix.GetLength(0);
-            columns = matrix.GetLength(1);
-            List<string> ves = new List<string>();
+            int rows = matrix.GetLength(0);
+            List<string> values = new List<string>();
+
             for (int i = 1; i < rows; i++)
             {
-                ves.Add(matrix[i, 5]);
+                values.Add(matrix[i, categoryIndex]);
             }
-            double[] doubleVes = new double[ves.Count];
-            for (int v = 0; v < ves.Count; v++)
+
+            double[] doubleValues = new double[values.Count];
+
+            for (int v = 0; v < values.Count; v++)
             {
-                if (double.TryParse(ves[v], out double parsedValue))
+                if (double.TryParse(values[v], out double parsedValue))
                 {
-                    doubleVes[v] = parsedValue;
+                    doubleValues[v] = parsedValue;
                 }
                 else
                 {
-                    MessageBox.Show("Произошло непредвиденное исключение", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Произошла ошибка при парсинге значений.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
             }
-            textBoxOutPutMinMax_GAM.Text = Convert.ToString(doubleVes.Min());
 
+            double result = isMax ? doubleValues.Max() : doubleValues.Min();
+            textBoxOutPutMinMax_GAM.Text = Convert.ToString(result);
+        }
+
+        private void весВидеоклипаToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CalculateMinMaxAverage(5, false);
         }
 
         private void длительностьВидеоклипаToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            matrix = ds.LoadDataSet(path);
-            rows = matrix.GetLength(0);
-            columns = matrix.GetLength(1);
-            List<string> dlit = new List<string>();
-            for (int i = 1; i < rows; i++)
-            {
-                dlit.Add(matrix[i, 2]);
-            }
-            double[] doubleDlit = new double[dlit.Count];
-            for (int v = 0; v < dlit.Count; v++)
-            {
-                if (double.TryParse(dlit[v], out double parsedValue))
-                {
-                    doubleDlit[v] = parsedValue;
-                }
-                else
-                {
-                    MessageBox.Show("Произошло непредвиденное исключение", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            textBoxOutPutMinMax_GAM.Text = Convert.ToString(doubleDlit.Min());
+            CalculateMinMaxAverage(2, false);
         }
 
         private void весВидеоклипаToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            matrix = ds.LoadDataSet(path);
-            rows = matrix.GetLength(0);
-            columns = matrix.GetLength(1);
-            List<string> ves = new List<string>();
-            for (int i = 1; i < rows; i++)
-            {
-                ves.Add(matrix[i, 5]);
-            }
-            double[] doubleVes = new double[ves.Count];
-            for (int v = 0; v < ves.Count; v++)
-            {
-                if (double.TryParse(ves[v], out double parsedValue))
-                {
-                    doubleVes[v] = parsedValue;
-                }
-                else
-                {
-                    MessageBox.Show("Произошло непредвиденное исключение", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            textBoxOutPutMinMax_GAM.Text = Convert.ToString(doubleVes.Max());
+            CalculateMinMaxAverage(5, true);
         }
 
         private void длительностьВидеоклипаToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            matrix = ds.LoadDataSet(path);
-            rows = matrix.GetLength(0);
-            columns = matrix.GetLength(1);
-            List<string> dlit = new List<string>();
-            for (int i = 1; i < rows; i++)
-            {
-                dlit.Add(matrix[i, 2]);
-            }
-            double[] doubleDlit = new double[dlit.Count];
-            for (int v = 0; v < dlit.Count; v++)
-            {
-                if (double.TryParse(dlit[v], out double parsedValue))
-                {
-                    doubleDlit[v] = parsedValue;
-                }
-                else
-                {
-                    MessageBox.Show("Произошло непредвиденное исключение", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            textBoxOutPutMinMax_GAM.Text = Convert.ToString(doubleDlit.Max());
+            CalculateMinMaxAverage(2, true);
         }
 
         private void весВидеоклипаToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            matrix = ds.LoadDataSet(path);
-            rows = matrix.GetLength(0);
-            columns = matrix.GetLength(1);
-            List<string> ves = new List<string>();
-            for (int i = 1; i < rows; i++)
-            {
-                ves.Add(matrix[i, 5]);
-            }
-            double[] doubleVes = new double[ves.Count];
-            for (int v = 0; v < ves.Count; v++)
-            {
-                if (double.TryParse(ves[v], out double parsedValue))
-                {
-                    doubleVes[v] = parsedValue;
-                }
-                else
-                {
-                    MessageBox.Show("Произошло непредвиденное исключение", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            double sred = Math.Round(doubleVes.Sum() / doubleVes.Length, 3);
-            textBoxOutPutMinMax_GAM.Text = Convert.ToString(sred);
+            CalculateMinMaxAverage(5, false);
         }
 
         private void длительностьВидеоклипаToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            matrix = ds.LoadDataSet(path);
-            rows = matrix.GetLength(0);
-            columns = matrix.GetLength(1);
-            List<string> dlit = new List<string>();
-            for (int i = 1; i < rows; i++)
-            {
-                dlit.Add(matrix[i, 2]);
-            }
-            double[] doubleDlit = new double[dlit.Count];
-            for (int v = 0; v < dlit.Count; v++)
-            {
-                if (double.TryParse(dlit[v], out double parsedValue))
-                {
-                    doubleDlit[v] = parsedValue;
-                }
-                else
-                {
-                    MessageBox.Show("Произошло непредвиденное исключение", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            double sred = Math.Round(doubleDlit.Sum() / doubleDlit.Length, 3);
-            textBoxOutPutMinMax_GAM.Text = Convert.ToString(sred);
+            CalculateMinMaxAverage(2, false);
         }
 
         private void buttonBack_GAM_MouseLeave(object sender, EventArgs e)
@@ -412,11 +200,19 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             buttonAbout_GAM.ForeColor = Color.WhiteSmoke;
         }
 
-
         private void pictureBoxWait_GAM_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void panelUpperGraph_GAM_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void chartGraph_GAM_Click(object sender, EventArgs e)
         {
 
         }
-
     }
 }

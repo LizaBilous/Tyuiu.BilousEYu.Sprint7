@@ -24,24 +24,19 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
 
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInformationcs));
             label1 = new Label();
             buttonOK_RKN = new Button();
             pictureBoxAvatar_RKN = new PictureBox();
-
-            ((System.ComponentModel.ISupportInitialize)(pictureBoxAvatar_RKN)).BeginInit();
+            ((ISupportInitialize)pictureBoxAvatar_RKN).BeginInit();
             SuspendLayout();
-
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Location = new Point(177, 25);
             label1.Name = "label1";
-            label1.Size = new Size(302, 150);
+            label1.Size = new Size(0, 20);
             label1.TabIndex = 0;
-            label1.Text = resources.GetString("label1.Text");
-
             // 
             // buttonOK_RKN
             // 
@@ -52,23 +47,23 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             buttonOK_RKN.TabIndex = 2;
             buttonOK_RKN.Text = "OK";
             buttonOK_RKN.UseVisualStyleBackColor = true;
-            buttonOK_RKN.Click += buttonOK_RKN_Click; // Подписка на событие
-
+            buttonOK_RKN.Click += buttonOK_RKN_Click;
             // 
             // pictureBoxAvatar_RKN
             // 
+            pictureBoxAvatar_RKN.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBoxAvatar_RKN.Location = new Point(12, 25);
             pictureBoxAvatar_RKN.Name = "pictureBoxAvatar_RKN";
             pictureBoxAvatar_RKN.Size = new Size(145, 141);
             pictureBoxAvatar_RKN.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxAvatar_RKN.TabIndex = 1;
             pictureBoxAvatar_RKN.TabStop = false;
-
             // 
             // FormInformationcs
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(511, 233);
             Controls.Add(buttonOK_RKN);
             Controls.Add(pictureBoxAvatar_RKN);
@@ -79,11 +74,9 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             Name = "FormInformationcs";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "О программе";
-
-            ((System.ComponentModel.ISupportInitialize)(pictureBoxAvatar_RKN)).EndInit();
+            ((ISupportInitialize)pictureBoxAvatar_RKN).EndInit();
             ResumeLayout(false);
             PerformLayout();
-
         }
     }
 }
