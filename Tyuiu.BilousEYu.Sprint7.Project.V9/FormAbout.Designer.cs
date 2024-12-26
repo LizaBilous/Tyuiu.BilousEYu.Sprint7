@@ -121,7 +121,7 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormAbout";
-            Text = "О программе";
+            Text = "Автор";
             Load += FormAbout_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

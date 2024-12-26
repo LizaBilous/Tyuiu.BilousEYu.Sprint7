@@ -21,7 +21,7 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
         private void FormSettings_Load(object sender, EventArgs e)
         {
             // Инициализация значений по умолчанию для настроек
-            comboBoxLanguage.Items.AddRange(new string[] { "Русский", "English", "Français" });
+            comboBoxLanguage.Items.AddRange(new string[] { "Русский", "English", "Français", "Español" });
             comboBoxLanguage.SelectedItem = "Русский"; // Устанавливаем язык по умолчанию
         }
 
@@ -43,26 +43,38 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
 
         private void SaveSettings(string language)
         {
-            // Здесь можно добавить код для сохранения выбранного языка в файл или базу данных
-            // Например, сохранение в файл конфигурации
-            System.IO.File.WriteAllText("settings.txt", language);
+            try
+            {
+                System.IO.File.WriteAllText("settings.txt", language);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка при сохранении настроек: " + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ChangeApplicationLanguage(string language)
         {
-            // Замените на логику для изменения языка интерфейса приложения
-            // Например, обновление текстов кнопок и меток
+            // Здесь меняем текст интерфейса в зависимости от выбранного языка
             if (language == "Русский")
             {
-                // Обновление интерфейса на русский
+                this.Text = "Настройки";
+                buttonApply.Text = "Применить";
             }
             else if (language == "English")
             {
-                // Обновление интерфейса на английский
+                this.Text = "Settings";
+                buttonApply.Text = "Apply";
             }
             else if (language == "Français")
             {
-                // Обновление интерфейса на французский
+                this.Text = "Paramètres";
+                buttonApply.Text = "Appliquer";
+            }
+            else if (language == "Español")
+            {
+                this.Text = "Configuraciones";
+                buttonApply.Text = "Aplicar";
             }
         }
     }

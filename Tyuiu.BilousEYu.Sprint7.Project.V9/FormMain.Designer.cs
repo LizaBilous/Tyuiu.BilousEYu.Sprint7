@@ -102,7 +102,7 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             this.ButtonAbout.Location = new System.Drawing.Point(67, 431);
             this.ButtonAbout.Name = "ButtonAbout";
             this.ButtonAbout.Size = new System.Drawing.Size(267, 62);
-            this.ButtonAbout.TabIndex = 5;
+            this.ButtonAbout.TabIndex = 6;
             this.ButtonAbout.Text = "Автор";
             this.ButtonAbout.UseVisualStyleBackColor = true;
             this.ButtonAbout.Click += new System.EventHandler(this.ButtonAbout_Click);

@@ -5,72 +5,50 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
     partial class FormSettings
     {
         private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.Label labelLanguage;
-        private System.Windows.Forms.ComboBox comboBoxLanguage;
-        private System.Windows.Forms.Button buttonApply;
+        private ComboBox comboBoxLanguage;
+        private Button buttonApply;
 
         private void InitializeComponent()
         {
-            labelLanguage = new Label();
-            comboBoxLanguage = new ComboBox();
-            buttonApply = new Button();
-
-            SuspendLayout();
-
-            // 
-            // labelLanguage
-            // 
-            labelLanguage.AutoSize = true;
-            labelLanguage.Location = new Point(15, 25);
-            labelLanguage.Name = "labelLanguage";
-            labelLanguage.Size = new Size(134, 20);
-            labelLanguage.TabIndex = 0;
-            labelLanguage.Text = "Выберите язык:";
+            this.comboBoxLanguage = new ComboBox();
+            this.buttonApply = new Button();
+            this.SuspendLayout();
 
             // 
             // comboBoxLanguage
             // 
-            comboBoxLanguage.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBoxLanguage.Location = new Point(15, 50);
-            comboBoxLanguage.Name = "comboBoxLanguage";
-            comboBoxLanguage.Size = new Size(200, 28);
-            comboBoxLanguage.TabIndex = 1;
-            comboBoxLanguage.SelectedIndexChanged += ComboBoxLanguage_SelectedIndexChanged;
+            this.comboBoxLanguage.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.comboBoxLanguage.FormattingEnabled = true;
+            this.comboBoxLanguage.Location = new System.Drawing.Point(12, 12);
+            this.comboBoxLanguage.Name = "comboBoxLanguage";
+            this.comboBoxLanguage.Size = new System.Drawing.Size(200, 28);
+            this.comboBoxLanguage.TabIndex = 0;
+            this.comboBoxLanguage.SelectedIndexChanged += new EventHandler(this.ComboBoxLanguage_SelectedIndexChanged);
 
             // 
             // buttonApply
             // 
-            buttonApply.Location = new Point(15, 100);
-            buttonApply.Name = "buttonApply";
-            buttonApply.Size = new Size(200, 30);
-            buttonApply.TabIndex = 2;
-            buttonApply.Text = "Применить";
-            buttonApply.UseVisualStyleBackColor = true;
-            buttonApply.Click += ButtonApply_Click;
+            this.buttonApply.Location = new System.Drawing.Point(12, 50);
+            this.buttonApply.Name = "buttonApply";
+            this.buttonApply.Size = new System.Drawing.Size(200, 30);
+            this.buttonApply.TabIndex = 1;
+            this.buttonApply.Text = "Применить";
+            this.buttonApply.UseVisualStyleBackColor = true;
+            this.buttonApply.Click += new EventHandler(this.ButtonApply_Click);
 
             // 
             // FormSettings
             // 
-            ClientSize = new Size(250, 150);
-            Controls.Add(buttonApply);
-            Controls.Add(comboBoxLanguage);
-            Controls.Add(labelLanguage);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
-            MaximizeBox = false;
-            Name = "FormSettings";
-            StartPosition = FormStartPosition.CenterParent;
-            Text = "Настройки";
-            ResumeLayout(false);
-            PerformLayout();
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(284, 101);
+            this.Controls.Add(this.buttonApply);
+            this.Controls.Add(this.comboBoxLanguage);
+            this.Name = "FormSettings";
+            this.Text = "Настройки";
+            this.Load += new EventHandler(this.FormSettings_Load);
+            this.ResumeLayout(false);
+        
         }
     }
 }

@@ -58,21 +58,21 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
         {
             // Открытие формы помощи
             FormHelp helpForm = new FormHelp();
-            helpForm.Show();
+            helpForm.ShowDialog();
         }
 
         private void ButtonUploadVideo_Click(object sender, EventArgs e)
         {
             // Открытие формы загрузки видео
             FormUploadVideo uploadVideoForm = new FormUploadVideo();
-            uploadVideoForm.Show();
+            uploadVideoForm.ShowDialog();
         }
 
         private void ButtonAbout_Click(object sender, EventArgs e)
         {   
             // Открытие формы Автор     
             FormAbout AboutForm = new FormAbout();
-            AboutForm.Show();
+            AboutForm.ShowDialog();
         }
     }
 }
