@@ -11,24 +11,24 @@ using Tyuiu.BilousEYu.Sprint7.Project.V9.Lib;
 
 namespace Tyuiu.BilousEYu.Sprint7.Project.V9
 {
-    public partial class FormAbout : Form
+    public partial class FormSettings : Form
     {
-        public FormAbout()
+        public FormSettings()
         {
             InitializeComponent();
         }
 
-        public void buttonOk_Click(object sender, EventArgs e)
+        private void ButtonApply_Click(object sender, EventArgs e)
         {
-            this.Close();
+            // Логика применения настроек
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void FormSettings_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void FormAbout_Load(object sender, EventArgs e)
+        private void ComboBoxLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

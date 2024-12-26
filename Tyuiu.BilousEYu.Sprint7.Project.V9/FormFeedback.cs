@@ -11,21 +11,19 @@ using Tyuiu.BilousEYu.Sprint7.Project.V9.Lib;
 
 namespace Tyuiu.BilousEYu.Sprint7.Project.V9
 {
-    public partial class FormHelp : Form
+    public partial class FormFeedback : Form
     {
-        public FormHelp()
+        public FormFeedback()
         {
             InitializeComponent();
-            LoadHelpContent();
         }
 
-        private void LoadHelpContent()
+        private void ButtonSubmit_Click(object sender, EventArgs e)
         {
-            // Загрузка содержимого справки
-            HelpTextBox.Text = "Здесь будет информация о том, как использовать приложение.";
+            // Логика для отправки отзыва
         }
 
-        private void HelpTextBox_TextChanged(object sender, EventArgs e)
+        private void TextBoxFeedback_TextChanged(object sender, EventArgs e)
         {
 
         }

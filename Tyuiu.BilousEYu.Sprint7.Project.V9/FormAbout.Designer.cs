@@ -48,6 +48,7 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             pictureBox1.Size = new Size(205, 332);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // label1
             // 
@@ -134,6 +135,7 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             MinimizeBox = false;
             Name = "FormAbout";
             Text = "О программе";
+            Load += FormAbout_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -11,21 +11,20 @@ using Tyuiu.BilousEYu.Sprint7.Project.V9.Lib;
 
 namespace Tyuiu.BilousEYu.Sprint7.Project.V9
 {
-    public partial class FormHelp : Form
+    public partial class FormStatistics : Form
     {
-        public FormHelp()
+        public FormStatistics()
         {
             InitializeComponent();
-            LoadHelpContent();
+            LoadStatistics();
         }
 
-        private void LoadHelpContent()
+        private void LoadStatistics()
         {
-            // Загрузка содержимого справки
-            HelpTextBox.Text = "Здесь будет информация о том, как использовать приложение.";
+            // Логика для загрузки и отображения статистики
         }
 
-        private void HelpTextBox_TextChanged(object sender, EventArgs e)
+        private void StatisticsChart_Click(object sender, EventArgs e)
         {
 
         }
