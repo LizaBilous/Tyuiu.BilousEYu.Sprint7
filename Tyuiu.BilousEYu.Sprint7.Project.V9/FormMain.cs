@@ -20,45 +20,52 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             InitializeComponent();
         }
 
-
         private void FormMain_Load(object sender, EventArgs e)
         {
-            // Ваш код загрузки формы
+            // Здесь можно добавить код, который будет выполняться при загрузке формы
+            MessageBox.Show("Добро пожаловать в приложение!");
         }
 
         private void ButtonUserProfile_Click(object sender, EventArgs e)
         {
-            // Логика кнопки "Профиль пользователя"
+            // Открытие формы профиля пользователя
+            FormUserProfile userProfileForm = new FormUserProfile();
+            userProfileForm.Show();
         }
 
         private void ButtonVideoCatalog_Click(object sender, EventArgs e)
         {
-            // Логика кнопки "Каталог видеопленок"
+            // Открытие формы каталога видео
+            FormVideoCatalog videoCatalogForm = new FormVideoCatalog();
+            videoCatalogForm.Show();
         }
 
         private void ButtonSettings_Click(object sender, EventArgs e)
         {
-            // Логика кнопки "Настройки"
+            // Открытие формы настроек
+            FormSettings settingsForm = new FormSettings();
+            settingsForm.Show();
         }
 
         private void ButtonStatistics_Click(object sender, EventArgs e)
         {
-            // Логика кнопки "Статистика"
+            // Открытие формы статистики
+            FormStatistics statisticsForm = new FormStatistics();
+            statisticsForm.Show();
         }
 
         private void ButtonHelp_Click(object sender, EventArgs e)
         {
-            // Логика кнопки "Помощь"
+            // Открытие формы помощи
+            FormHelp helpForm = new FormHelp();
+            helpForm.Show();
         }
 
         private void ButtonUploadVideo_Click(object sender, EventArgs e)
         {
-            // Логика кнопки "Загрузить видео"
-        }
-
-        private void FormMain_Load_1(object sender, EventArgs e)
-        {
-
+            // Открытие формы загрузки видео
+            FormUploadVideo uploadVideoForm = new FormUploadVideo();
+            uploadVideoForm.Show();
         }
     }
 }

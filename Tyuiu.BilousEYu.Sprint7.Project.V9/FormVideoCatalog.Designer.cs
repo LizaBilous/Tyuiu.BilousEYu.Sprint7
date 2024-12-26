@@ -3,6 +3,76 @@
     partial class FormVideoCatalog
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.ListBox listBoxVideos;
+        private System.Windows.Forms.Button buttonAddVideo;
+        private System.Windows.Forms.Button buttonEditVideo;
+        private System.Windows.Forms.Button buttonDeleteVideo;
+
+        private void InitializeComponent()
+        {
+            listBoxVideos = new ListBox();
+            buttonAddVideo = new Button();
+            buttonEditVideo = new Button();
+            buttonDeleteVideo = new Button();
+
+            SuspendLayout();
+
+            // 
+            // listBoxVideos
+            // 
+            listBoxVideos.FormattingEnabled = true;
+            listBoxVideos.ItemHeight = 20;
+            listBoxVideos.Location = new System.Drawing.Point(15, 15);
+            listBoxVideos.Name = "listBoxVideos";
+            listBoxVideos.Size = new System.Drawing.Size(250, 180);
+            listBoxVideos.TabIndex = 0;
+            listBoxVideos.SelectedIndexChanged += listBoxVideos_SelectedIndexChanged;
+
+            // 
+            // buttonAddVideo
+            // 
+            buttonAddVideo.Location = new System.Drawing.Point(15, 210);
+            buttonAddVideo.Name = "buttonAddVideo";
+            buttonAddVideo.Size = new System.Drawing.Size(75, 30);
+            buttonAddVideo.Text = "Добавить";
+            buttonAddVideo.UseVisualStyleBackColor = true;
+            buttonAddVideo.Click += ButtonAddVideo_Click;
+
+            // 
+            // buttonEditVideo
+            // 
+            buttonEditVideo.Location = new System.Drawing.Point(100, 210);
+            buttonEditVideo.Name = "buttonEditVideo";
+            buttonEditVideo.Size = new System.Drawing.Size(75, 30);
+            buttonEditVideo.Text = "Редактировать";
+            buttonEditVideo.UseVisualStyleBackColor = true;
+            buttonEditVideo.Click += ButtonEditVideo_Click;
+
+            // 
+            // buttonDeleteVideo
+            // 
+            buttonDeleteVideo.Location = new System.Drawing.Point(185, 210);
+            buttonDeleteVideo.Name = "buttonDeleteVideo";
+            buttonDeleteVideo.Size = new System.Drawing.Size(75, 30);
+            buttonDeleteVideo.Text = "Удалить";
+            buttonDeleteVideo.UseVisualStyleBackColor = true;
+            buttonDeleteVideo.Click += ButtonDeleteVideo_Click;
+
+            // 
+            // FormVideoCatalog
+            // 
+            ClientSize = new System.Drawing.Size(284, 261);
+            Controls.Add(listBoxVideos);
+            Controls.Add(buttonAddVideo);
+            Controls.Add(buttonEditVideo);
+            Controls.Add(buttonDeleteVideo);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            Name = "FormVideoCatalog";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Каталог Видео";
+            ResumeLayout(false);
+        }
 
         protected override void Dispose(bool disposing)
         {
@@ -12,66 +82,5 @@
             }
             base.Dispose(disposing);
         }
-
-        private void InitializeComponent()
-        {
-            ButtonAddVideo = new Button();
-            ButtonEditVideo = new Button();
-            ButtonDeleteVideo = new Button();
-            VideoListBox = new ListBox();
-            SuspendLayout();
-            // 
-            // ButtonAddVideo
-            // 
-            ButtonAddVideo.Location = new Point(12, 198);
-            ButtonAddVideo.Name = "ButtonAddVideo";
-            ButtonAddVideo.Size = new Size(100, 40);
-            ButtonAddVideo.TabIndex = 0;
-            ButtonAddVideo.Text = "Добавить видео";
-            ButtonAddVideo.Click += ButtonAddVideo_Click;
-            // 
-            // ButtonEditVideo
-            // 
-            ButtonEditVideo.Location = new Point(310, 74);
-            ButtonEditVideo.Name = "ButtonEditVideo";
-            ButtonEditVideo.Size = new Size(131, 40);
-            ButtonEditVideo.TabIndex = 1;
-            ButtonEditVideo.Text = "Редактировать";
-            ButtonEditVideo.Click += ButtonEditVideo_Click;
-            // 
-            // ButtonDeleteVideo
-            // 
-            ButtonDeleteVideo.Location = new Point(352, 198);
-            ButtonDeleteVideo.Name = "ButtonDeleteVideo";
-            ButtonDeleteVideo.Size = new Size(100, 40);
-            ButtonDeleteVideo.TabIndex = 2;
-            ButtonDeleteVideo.Text = "Удалить";
-            ButtonDeleteVideo.Click += ButtonDeleteVideo_Click;
-            // 
-            // VideoListBox
-            // 
-            VideoListBox.Location = new Point(12, 21);
-            VideoListBox.Name = "VideoListBox";
-            VideoListBox.Size = new Size(277, 164);
-            VideoListBox.TabIndex = 3;
-            VideoListBox.SelectedIndexChanged += VideoListBox_SelectedIndexChanged;
-            // 
-            // FormVideoCatalog
-            // 
-            ClientSize = new Size(464, 250);
-            Controls.Add(ButtonAddVideo);
-            Controls.Add(ButtonEditVideo);
-            Controls.Add(ButtonDeleteVideo);
-            Controls.Add(VideoListBox);
-            Name = "FormVideoCatalog";
-            Text = "Каталог видеопленок";
-            Load += FormVideoCatalog_Load;
-            ResumeLayout(false);
-        }
-
-        private System.Windows.Forms.Button ButtonAddVideo;
-        private System.Windows.Forms.Button ButtonEditVideo;
-        private System.Windows.Forms.Button ButtonDeleteVideo;
-        private System.Windows.Forms.ListBox VideoListBox;
     }
 }

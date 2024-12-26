@@ -3,15 +3,8 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
 {
     partial class FormAbout
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -21,12 +14,6 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
@@ -42,6 +29,8 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             // 
             // pictureBox1
             // 
+            pictureBox1.BackgroundImage = Properties.Resources._5d5c8768aa6ca2cc8c468e67c8595f3b;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox1.Location = new Point(14, 16);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
@@ -119,7 +108,6 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(619, 365);
             Controls.Add(buttonOk);
             Controls.Add(label6);
@@ -130,7 +118,6 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
-            Margin = new Padding(3, 4, 3, 4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "FormAbout";
@@ -140,7 +127,6 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             ResumeLayout(false);
             PerformLayout();
         }
-        #endregion
 
         private PictureBox pictureBox1;
         private Label label1;

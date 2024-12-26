@@ -16,18 +16,30 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
         public FormHelp()
         {
             InitializeComponent();
-            LoadHelpContent();
         }
 
-        private void LoadHelpContent()
+        private void textBoxHelp_TextChanged(object sender, EventArgs e)
         {
-            // Загрузка содержимого справки
-            HelpTextBox.Text = "Здесь будет информация о том, как использовать приложение.";
-        }
+            // Метод, который вызывается при изменении текста в текстовом поле
+            string input = textBoxHelp.Text;
 
-        private void HelpTextBox_TextChanged(object sender, EventArgs e)
-        {
-
+            // Пример логики, показывающей подсказку на основе ввода
+            if (string.IsNullOrWhiteSpace(input))
+            {
+                labelHint.Text = "Введите текст для получения подсказки...";
+            }
+            else if (input.Contains("как"))
+            {
+                labelHint.Text = "Наберите вопрос, например: 'Как использовать приложение?'";
+            }
+            else if (input.Contains("где"))
+            {
+                labelHint.Text = "Например: 'Где найти настройки?'";
+            }
+            else
+            {
+                labelHint.Text = "Не могу помочь с этим вопросом.";
+            }
         }
     }
 }

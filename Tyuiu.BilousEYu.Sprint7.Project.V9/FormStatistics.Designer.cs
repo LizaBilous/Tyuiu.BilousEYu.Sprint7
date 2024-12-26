@@ -3,6 +3,39 @@
     partial class FormStatistics
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartStatistics;
+
+        private void InitializeComponent()
+        {
+            chartStatistics = new System.Windows.Forms.DataVisualization.Charting.Chart();
+
+            ((System.ComponentModel.ISupportInitialize)(chartStatistics)).BeginInit();
+
+            SuspendLayout();
+
+            // 
+            // chartStatistics
+            // 
+            chartStatistics.Location = new Point(12, 12);
+            chartStatistics.Name = "chartStatistics";
+            chartStatistics.Size = new Size(460, 300);
+            chartStatistics.TabIndex = 0;
+            chartStatistics.Text = "Статистика";
+            chartStatistics.Click += StatisticsChart_Click;
+
+            // 
+            // FormStatistics
+            // 
+            ClientSize = new Size(484, 321);
+            Controls.Add(chartStatistics);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            Name = "FormStatistics";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Статистика";
+            ((System.ComponentModel.ISupportInitialize)(chartStatistics)).EndInit();
+            ResumeLayout(false);
+        }
 
         protected override void Dispose(bool disposing)
         {
@@ -12,31 +45,5 @@
             }
             base.Dispose(disposing);
         }
-
-        private void InitializeComponent()
-        {
-            StatisticsChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)StatisticsChart).BeginInit();
-            SuspendLayout();
-            // 
-            // StatisticsChart
-            // 
-            StatisticsChart.Location = new Point(10, 10);
-            StatisticsChart.Name = "StatisticsChart";
-            StatisticsChart.Size = new Size(380, 250);
-            StatisticsChart.TabIndex = 0;
-            StatisticsChart.Click += StatisticsChart_Click;
-            // 
-            // FormStatistics
-            // 
-            ClientSize = new Size(400, 300);
-            Controls.Add(StatisticsChart);
-            Name = "FormStatistics";
-            Text = "Статистика";
-            ((System.ComponentModel.ISupportInitialize)StatisticsChart).EndInit();
-            ResumeLayout(false);
-        }
-
-        private System.Windows.Forms.DataVisualization.Charting.Chart StatisticsChart;
     }
 }

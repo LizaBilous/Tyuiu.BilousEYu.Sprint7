@@ -4,10 +4,36 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
     partial class FormUploadVideo
     {
         private System.ComponentModel.IContainer components = null;
-        private Button ButtonUpload;
-        private Button ButtonSelectFile;
-        private TextBox TextBoxFilePath;
-        private Label LabelFilePath;
+        private System.Windows.Forms.Button buttonUpload;
+
+        private void InitializeComponent()
+        {
+            buttonUpload = new Button();
+            SuspendLayout();
+
+            // 
+            // buttonUpload
+            // 
+            buttonUpload.Location = new System.Drawing.Point(15, 15);
+            buttonUpload.Name = "buttonUpload";
+            buttonUpload.Size = new System.Drawing.Size(150, 30);
+            buttonUpload.TabIndex = 0;
+            buttonUpload.Text = "Загрузить видео";
+            buttonUpload.UseVisualStyleBackColor = true;
+            buttonUpload.Click += buttonUpload_Click;
+
+            // 
+            // FormUploadVideo
+            // 
+            ClientSize = new System.Drawing.Size(180, 60);
+            Controls.Add(buttonUpload);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            Name = "FormUploadVideo";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Загрузка видео";
+            ResumeLayout(false);
+        }
 
         protected override void Dispose(bool disposing)
         {
@@ -16,62 +42,6 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
                 components.Dispose();
             }
             base.Dispose(disposing);
-        }
-
-        private void InitializeComponent()
-        {
-            ButtonUpload = new Button();
-            ButtonSelectFile = new Button();
-            TextBoxFilePath = new TextBox();
-            LabelFilePath = new Label();
-            SuspendLayout();
-            // 
-            // ButtonUpload
-            // 
-            ButtonUpload.Location = new Point(10, 168);
-            ButtonUpload.Name = "ButtonUpload";
-            ButtonUpload.Size = new Size(120, 30);
-            ButtonUpload.TabIndex = 3;
-            ButtonUpload.Text = "Загрузить";
-            ButtonUpload.Click += ButtonUpload_Click;
-            // 
-            // ButtonSelectFile
-            // 
-            ButtonSelectFile.Location = new Point(130, 98);
-            ButtonSelectFile.Name = "ButtonSelectFile";
-            ButtonSelectFile.Size = new Size(120, 30);
-            ButtonSelectFile.TabIndex = 0;
-            ButtonSelectFile.Text = "Выбрать видео";
-            ButtonSelectFile.Click += ButtonSelectFile_Click;
-            // 
-            // TextBoxFilePath
-            // 
-            TextBoxFilePath.Location = new Point(10, 98);
-            TextBoxFilePath.Name = "TextBoxFilePath";
-            TextBoxFilePath.ReadOnly = true;
-            TextBoxFilePath.Size = new Size(240, 27);
-            TextBoxFilePath.TabIndex = 1;
-            // 
-            // LabelFilePath
-            // 
-            LabelFilePath.Location = new Point(12, 72);
-            LabelFilePath.Name = "LabelFilePath";
-            LabelFilePath.Size = new Size(137, 23);
-            LabelFilePath.TabIndex = 2;
-            LabelFilePath.Text = "Путь к файлу:";
-            // 
-            // FormUploadVideo
-            // 
-            ClientSize = new Size(300, 210);
-            Controls.Add(ButtonSelectFile);
-            Controls.Add(TextBoxFilePath);
-            Controls.Add(LabelFilePath);
-            Controls.Add(ButtonUpload);
-            Name = "FormUploadVideo";
-            Text = "Загрузка видео";
-            Load += FormUploadVideo_Load;
-            ResumeLayout(false);
-            PerformLayout();
         }
     }
 }

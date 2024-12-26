@@ -3,6 +3,63 @@
     partial class FormFeedback
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Label labelPrompt;
+        private System.Windows.Forms.TextBox textBoxFeedback;
+        private System.Windows.Forms.Button buttonSubmit;
+
+        private void InitializeComponent()
+        {
+            labelPrompt = new Label();
+            textBoxFeedback = new TextBox();
+            buttonSubmit = new Button();
+            SuspendLayout();
+
+            // 
+            // labelPrompt
+            // 
+            labelPrompt.AutoSize = true;
+            labelPrompt.Location = new Point(15, 25);
+            labelPrompt.Name = "labelPrompt";
+            labelPrompt.Size = new Size(186, 20);
+            labelPrompt.TabIndex = 0;
+            labelPrompt.Text = "Введите ваш отзыв ниже:";
+
+            // 
+            // textBoxFeedback
+            // 
+            textBoxFeedback.Location = new Point(15, 44);
+            textBoxFeedback.Multiline = true;
+            textBoxFeedback.Name = "textBoxFeedback";
+            textBoxFeedback.Size = new Size(442, 131);
+            textBoxFeedback.TabIndex = 1;
+            textBoxFeedback.TextChanged += textBoxFeedback_TextChanged; // Используем единственный обработчик
+
+            // 
+            // buttonSubmit
+            // 
+            buttonSubmit.Location = new Point(340, 181);
+            buttonSubmit.Name = "buttonSubmit";
+            buttonSubmit.Size = new Size(104, 30);
+            buttonSubmit.TabIndex = 2;
+            buttonSubmit.Text = "Отправить отзыв";
+            buttonSubmit.UseVisualStyleBackColor = true;
+            buttonSubmit.Click += buttonSubmit_Click;
+
+            // 
+            // FormFeedback
+            // 
+            ClientSize = new Size(483, 220);
+            Controls.Add(buttonSubmit);
+            Controls.Add(textBoxFeedback);
+            Controls.Add(labelPrompt);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            Name = "FormFeedback";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Форма обратной связи";
+            ResumeLayout(false);
+            PerformLayout();
+        }
 
         protected override void Dispose(bool disposing)
         {
@@ -12,47 +69,5 @@
             }
             base.Dispose(disposing);
         }
-
-        private void InitializeComponent()
-        {
-            TextBoxFeedback = new TextBox();
-            ButtonSubmit = new Button();
-            SuspendLayout();
-            // 
-            // TextBoxFeedback
-            // 
-            TextBoxFeedback.Location = new Point(10, 10);
-            TextBoxFeedback.Multiline = true;
-            TextBoxFeedback.Name = "TextBoxFeedback";
-            TextBoxFeedback.Size = new Size(380, 200);
-            TextBoxFeedback.TabIndex = 0;
-            TextBoxFeedback.TextChanged += TextBoxFeedback_TextChanged;
-            // 
-            // ButtonSubmit
-            // 
-            ButtonSubmit.Location = new Point(10, 220);
-            ButtonSubmit.Name = "ButtonSubmit";
-            ButtonSubmit.Size = new Size(98, 31);
-            ButtonSubmit.TabIndex = 1;
-            ButtonSubmit.Text = "Отправить";
-            ButtonSubmit.Click += ButtonSubmit_Click;
-            // 
-            // FormFeedback
-            // 
-            ClientSize = new Size(400, 285);
-            Controls.Add(TextBoxFeedback);
-            Controls.Add(ButtonSubmit);
-            Name = "FormFeedback";
-            Text = "Отзывы";
-            ResumeLayout(false);
-            PerformLayout();
-        }
-
-        private System.Windows.Forms.TextBox TextBoxFeedback;
-        private System.Windows.Forms.Button ButtonSubmit;
     }
-
-    #region Windows Form Designer generated code
-
-        #endregion
 }

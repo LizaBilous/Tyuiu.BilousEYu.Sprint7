@@ -15,48 +15,48 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
         public FormUploadVideo()
         {
             InitializeComponent();
-            CustomizeDesign();
         }
 
-        private void CustomizeDesign()
+        private void buttonUpload_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.LightGray; // Фоновый цвет формы
-            ButtonSelectFile.BackColor = Color.DarkSlateBlue;
-            ButtonSelectFile.ForeColor = Color.White;
-            ButtonSelectFile.FlatStyle = FlatStyle.Flat;
-
-            ButtonUpload.BackColor = Color.DarkSlateGray;
-            ButtonUpload.ForeColor = Color.White;
-            ButtonUpload.FlatStyle = FlatStyle.Flat;
-
-            ButtonSelectFile.MouseEnter += (s, e) => { ButtonSelectFile.BackColor = Color.LightBlue; };
-            ButtonSelectFile.MouseLeave += (s, e) => { ButtonSelectFile.BackColor = Color.DarkSlateBlue; };
-
-            ButtonUpload.MouseEnter += (s, e) => { ButtonUpload.BackColor = Color.LightBlue; };
-            ButtonUpload.MouseLeave += (s, e) => { ButtonUpload.BackColor = Color.DarkSlateGray; };
-        }
-
-        private void ButtonUpload_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Видео успешно загружено!");
-            this.Close();
-        }
-
-        private void ButtonSelectFile_Click(object sender, EventArgs e)
-        {
+            // Открытие диалога для выбора файла
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                openFileDialog.Filter = "Video Files|*.mp4;*.avi;*.mov|All Files|*.*";
+                openFileDialog.Filter = "Видео файлы (*.mp4;*.avi;*.mov)|*.mp4;*.avi;*.mov|Все файлы (*.*)|*.*";
+                openFileDialog.Title = "Выберите видео для загрузки";
+
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    TextBoxFilePath.Text = openFileDialog.FileName;
+                    string filePath = openFileDialog.FileName;
+                    // Логика для загрузки видеофайла
+                    UploadVideo(filePath);
                 }
+            }
+        }
+
+        private void UploadVideo(string filePath)
+        {
+            // Здесь можно добавить код для загрузки видео
+            // Например, отправка на сервер
+
+            try
+            {
+                // Имитируем загрузку видео
+                System.Threading.Thread.Sleep(2000); // Симуляция времени загрузки
+
+                // Сообщение об успешной загрузке
+                MessageBox.Show("Видео успешно загружено!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                // Обработка ошибок
+                MessageBox.Show($"Ошибка при загрузке видео: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void FormUploadVideo_Load(object sender, EventArgs e)
         {
-
+            // Можно инициализировать интерфейс или данные при загрузке формы, если необходимо
         }
     }
 }

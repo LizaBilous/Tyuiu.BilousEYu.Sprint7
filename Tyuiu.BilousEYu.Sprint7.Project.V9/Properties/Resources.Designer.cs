@@ -63,6 +63,16 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _5d5c8768aa6ca2cc8c468e67c8595f3b {
+            get {
+                object obj = ResourceManager.GetObject("5d5c8768aa6ca2cc8c468e67c8595f3b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);

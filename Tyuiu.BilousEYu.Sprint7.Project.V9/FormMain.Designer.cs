@@ -5,6 +5,8 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
     partial class FormMain
     {
         private System.ComponentModel.IContainer components = null;
+
+        // Кнопки и другие элементы управления
         private System.Windows.Forms.Button ButtonUserProfile;
         private System.Windows.Forms.Button ButtonVideoCatalog;
         private System.Windows.Forms.Button ButtonSettings;
@@ -13,128 +15,101 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
         private System.Windows.Forms.Button ButtonUploadVideo;
 
         /// <summary>
-        /// Освобождает ресурсы, используемые формой.
+        /// Необходимый метод для поддержки конструктора - не изменяйте
+        /// содержимое этого метода с помощью редактора кода.
         /// </summary>
-        /// <param name="disposing">true, если необходимо освободить управляемые ресурсы; в противном случае false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
-
         private void InitializeComponent()
         {
-            ButtonUserProfile = new Button();
-            ButtonVideoCatalog = new Button();
-            ButtonSettings = new Button();
-            ButtonStatistics = new Button();
-            ButtonHelp = new Button();
-            ButtonUploadVideo = new Button();
-            SuspendLayout();
+            this.ButtonUserProfile = new System.Windows.Forms.Button();
+            this.ButtonVideoCatalog = new System.Windows.Forms.Button();
+            this.ButtonSettings = new System.Windows.Forms.Button();
+            this.ButtonStatistics = new System.Windows.Forms.Button();
+            this.ButtonHelp = new System.Windows.Forms.Button();
+            this.ButtonUploadVideo = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+
             // 
             // ButtonUserProfile
             // 
-            ButtonUserProfile.BackColor = Color.Gainsboro;
-            ButtonUserProfile.FlatStyle = FlatStyle.Flat;
-            ButtonUserProfile.ForeColor = Color.Black;
-            ButtonUserProfile.Location = new Point(67, 46);
-            ButtonUserProfile.Margin = new Padding(4, 5, 4, 5);
-            ButtonUserProfile.Name = "ButtonUserProfile";
-            ButtonUserProfile.Size = new Size(267, 62);
-            ButtonUserProfile.TabIndex = 0;
-            ButtonUserProfile.Text = "Профиль пользователя";
-            ButtonUserProfile.UseVisualStyleBackColor = false;
-            ButtonUserProfile.Click += ButtonUserProfile_Click;
+            this.ButtonUserProfile.Location = new System.Drawing.Point(67, 46);
+            this.ButtonUserProfile.Name = "ButtonUserProfile";
+            this.ButtonUserProfile.Size = new System.Drawing.Size(267, 62);
+            this.ButtonUserProfile.TabIndex = 0;
+            this.ButtonUserProfile.Text = "Профиль пользователя";
+            this.ButtonUserProfile.UseVisualStyleBackColor = true;
+            this.ButtonUserProfile.Click += new System.EventHandler(this.ButtonUserProfile_Click);
+
             // 
             // ButtonVideoCatalog
             // 
-            ButtonVideoCatalog.BackColor = Color.Gainsboro;
-            ButtonVideoCatalog.FlatStyle = FlatStyle.Flat;
-            ButtonVideoCatalog.ForeColor = Color.Black;
-            ButtonVideoCatalog.Location = new Point(67, 123);
-            ButtonVideoCatalog.Margin = new Padding(4, 5, 4, 5);
-            ButtonVideoCatalog.Name = "ButtonVideoCatalog";
-            ButtonVideoCatalog.Size = new Size(267, 62);
-            ButtonVideoCatalog.TabIndex = 1;
-            ButtonVideoCatalog.Text = "Каталог видеопленок";
-            ButtonVideoCatalog.UseVisualStyleBackColor = false;
-            ButtonVideoCatalog.Click += ButtonVideoCatalog_Click;
+            this.ButtonVideoCatalog.Location = new System.Drawing.Point(67, 123);
+            this.ButtonVideoCatalog.Name = "ButtonVideoCatalog";
+            this.ButtonVideoCatalog.Size = new System.Drawing.Size(267, 62);
+            this.ButtonVideoCatalog.TabIndex = 1;
+            this.ButtonVideoCatalog.Text = "Каталог видеопленок";
+            this.ButtonVideoCatalog.UseVisualStyleBackColor = true;
+            this.ButtonVideoCatalog.Click += new System.EventHandler(this.ButtonVideoCatalog_Click);
+
             // 
             // ButtonSettings
             // 
-            ButtonSettings.BackColor = Color.Gainsboro;
-            ButtonSettings.FlatStyle = FlatStyle.Flat;
-            ButtonSettings.ForeColor = Color.Black;
-            ButtonSettings.Location = new Point(67, 200);
-            ButtonSettings.Margin = new Padding(4, 5, 4, 5);
-            ButtonSettings.Name = "ButtonSettings";
-            ButtonSettings.Size = new Size(267, 62);
-            ButtonSettings.TabIndex = 2;
-            ButtonSettings.Text = "Настройки";
-            ButtonSettings.UseVisualStyleBackColor = false;
-            ButtonSettings.Click += ButtonSettings_Click;
+            this.ButtonSettings.Location = new System.Drawing.Point(67, 200);
+            this.ButtonSettings.Name = "ButtonSettings";
+            this.ButtonSettings.Size = new System.Drawing.Size(267, 62);
+            this.ButtonSettings.TabIndex = 2;
+            this.ButtonSettings.Text = "Настройки";
+            this.ButtonSettings.UseVisualStyleBackColor = true;
+            this.ButtonSettings.Click += new System.EventHandler(this.ButtonSettings_Click);
+
             // 
             // ButtonStatistics
             // 
-            ButtonStatistics.BackColor = Color.Gainsboro;
-            ButtonStatistics.FlatStyle = FlatStyle.Flat;
-            ButtonStatistics.ForeColor = Color.Black;
-            ButtonStatistics.Location = new Point(67, 277);
-            ButtonStatistics.Margin = new Padding(4, 5, 4, 5);
-            ButtonStatistics.Name = "ButtonStatistics";
-            ButtonStatistics.Size = new Size(267, 62);
-            ButtonStatistics.TabIndex = 3;
-            ButtonStatistics.Text = "Статистика";
-            ButtonStatistics.UseVisualStyleBackColor = false;
-            ButtonStatistics.Click += ButtonStatistics_Click;
+            this.ButtonStatistics.Location = new System.Drawing.Point(67, 277);
+            this.ButtonStatistics.Name = "ButtonStatistics";
+            this.ButtonStatistics.Size = new System.Drawing.Size(267, 62);
+            this.ButtonStatistics.TabIndex = 3;
+            this.ButtonStatistics.Text = "Статистика";
+            this.ButtonStatistics.UseVisualStyleBackColor = true;
+            this.ButtonStatistics.Click += new System.EventHandler(this.ButtonStatistics_Click);
+
             // 
             // ButtonHelp
             // 
-            ButtonHelp.BackColor = Color.Gainsboro;
-            ButtonHelp.FlatStyle = FlatStyle.Flat;
-            ButtonHelp.ForeColor = Color.Black;
-            ButtonHelp.Location = new Point(67, 354);
-            ButtonHelp.Margin = new Padding(4, 5, 4, 5);
-            ButtonHelp.Name = "ButtonHelp";
-            ButtonHelp.Size = new Size(267, 62);
-            ButtonHelp.TabIndex = 4;
-            ButtonHelp.Text = "Помощь";
-            ButtonHelp.UseVisualStyleBackColor = false;
-            ButtonHelp.Click += ButtonHelp_Click;
+            this.ButtonHelp.Location = new System.Drawing.Point(67, 354);
+            this.ButtonHelp.Name = "ButtonHelp";
+            this.ButtonHelp.Size = new System.Drawing.Size(267, 62);
+            this.ButtonHelp.TabIndex = 4;
+            this.ButtonHelp.Text = "Помощь";
+            this.ButtonHelp.UseVisualStyleBackColor = true;
+            this.ButtonHelp.Click += new System.EventHandler(this.ButtonHelp_Click);
+
             // 
             // ButtonUploadVideo
             // 
-            ButtonUploadVideo.BackColor = Color.Gainsboro;
-            ButtonUploadVideo.FlatStyle = FlatStyle.Flat;
-            ButtonUploadVideo.ForeColor = Color.Black;
-            ButtonUploadVideo.Location = new Point(67, 431);
-            ButtonUploadVideo.Margin = new Padding(4, 5, 4, 5);
-            ButtonUploadVideo.Name = "ButtonUploadVideo";
-            ButtonUploadVideo.Size = new Size(267, 62);
-            ButtonUploadVideo.TabIndex = 5;
-            ButtonUploadVideo.Text = "Загрузить видео";
-            ButtonUploadVideo.UseVisualStyleBackColor = false;
-            ButtonUploadVideo.Click += ButtonUploadVideo_Click;
+            this.ButtonUploadVideo.Location = new System.Drawing.Point(67, 431);
+            this.ButtonUploadVideo.Name = "ButtonUploadVideo";
+            this.ButtonUploadVideo.Size = new System.Drawing.Size(267, 62);
+            this.ButtonUploadVideo.TabIndex = 5;
+            this.ButtonUploadVideo.Text = "Загрузить видео";
+            this.ButtonUploadVideo.UseVisualStyleBackColor = true;
+            this.ButtonUploadVideo.Click += new System.EventHandler(this.ButtonUploadVideo_Click);
+
             // 
             // FormMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(400, 615);
-            Controls.Add(ButtonUserProfile);
-            Controls.Add(ButtonVideoCatalog);
-            Controls.Add(ButtonSettings);
-            Controls.Add(ButtonStatistics);
-            Controls.Add(ButtonHelp);
-            Controls.Add(ButtonUploadVideo);
-            Margin = new Padding(4, 5, 4, 5);
-            Name = "FormMain";
-            Text = "Главное меню";
-            Load += FormMain_Load_1;
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(400, 615);
+            this.Controls.Add(this.ButtonUserProfile);
+            this.Controls.Add(this.ButtonVideoCatalog);
+            this.Controls.Add(this.ButtonSettings);
+            this.Controls.Add(this.ButtonStatistics);
+            this.Controls.Add(this.ButtonHelp);
+            this.Controls.Add(this.ButtonUploadVideo);
+            this.Name = "FormMain";
+            this.Text = "Главное меню";
+            this.Load += new System.EventHandler(this.FormMain_Load);
+            this.ResumeLayout(false);
         }
     }
 }
