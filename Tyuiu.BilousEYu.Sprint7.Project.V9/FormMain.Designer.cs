@@ -13,6 +13,7 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
         private System.Windows.Forms.Button ButtonStatistics;
         private System.Windows.Forms.Button ButtonHelp;
         private System.Windows.Forms.Button ButtonUploadVideo;
+        private System.Windows.Forms.Button ButtonAbout;
 
         /// <summary>
         /// Необходимый метод для поддержки конструктора - не изменяйте
@@ -26,6 +27,7 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             this.ButtonStatistics = new System.Windows.Forms.Button();
             this.ButtonHelp = new System.Windows.Forms.Button();
             this.ButtonUploadVideo = new System.Windows.Forms.Button();
+            this.ButtonAbout = new System.Windows.Forms.Button();
             this.SuspendLayout();
 
             // 
@@ -95,6 +97,17 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             this.ButtonUploadVideo.Click += new System.EventHandler(this.ButtonUploadVideo_Click);
 
             // 
+            // ButtonAbout
+            // 
+            this.ButtonAbout.Location = new System.Drawing.Point(67, 431);
+            this.ButtonAbout.Name = "ButtonAbout";
+            this.ButtonAbout.Size = new System.Drawing.Size(267, 62);
+            this.ButtonAbout.TabIndex = 5;
+            this.ButtonAbout.Text = "Автор";
+            this.ButtonAbout.UseVisualStyleBackColor = true;
+            this.ButtonAbout.Click += new System.EventHandler(this.ButtonAbout_Click);
+
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -106,6 +119,7 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             this.Controls.Add(this.ButtonStatistics);
             this.Controls.Add(this.ButtonHelp);
             this.Controls.Add(this.ButtonUploadVideo);
+            this.Controls.Add(this.ButtonAbout);
             this.Name = "FormMain";
             this.Text = "Главное меню";
             this.Load += new System.EventHandler(this.FormMain_Load);

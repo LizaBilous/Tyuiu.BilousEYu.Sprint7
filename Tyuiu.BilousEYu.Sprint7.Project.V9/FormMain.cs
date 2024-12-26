@@ -67,6 +67,13 @@ namespace Tyuiu.BilousEYu.Sprint7.Project.V9
             FormUploadVideo uploadVideoForm = new FormUploadVideo();
             uploadVideoForm.Show();
         }
+
+        private void ButtonAbout_Click(object sender, EventArgs e)
+        {   
+            // Открытие формы Автор     
+            FormAbout AboutForm = new FormAbout();
+            AboutForm.Show();
+        }
     }
 }
 
