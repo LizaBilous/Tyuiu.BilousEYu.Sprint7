@@ -1,3 +1,5 @@
+using LibVLCSharp.Shared;
+
 namespace Tyuiu.BilousEYu.Sprint7.Project.V9
 {
     internal static class Program

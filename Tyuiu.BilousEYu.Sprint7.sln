@@ -5,11 +5,11 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task0", "Task0", "{B9AFED9E-2DE6-4467-AC4D-9905B1B92CBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.BilousEYu.Sprint7.Project.V9.Lib", "Tyuiu.BilousEYu.Sprint7.Project.V9.Lib\Tyuiu.BilousEYu.Sprint7.Project.V9.Lib.csproj", "{8C305F81-EA59-48B4-899B-096E9093B4EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.BilousEYu.Sprint7.Project.V9.Lib", "Tyuiu.BilousEYu.Sprint7.Project.V9.Lib\Tyuiu.BilousEYu.Sprint7.Project.V9.Lib.csproj", "{8C305F81-EA59-48B4-899B-096E9093B4EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.BilousEYu.Sprint7.Project.V9.Test", "Tyuiu.BilousEYu.Sprint7.Project.V9.Test\Tyuiu.BilousEYu.Sprint7.Project.V9.Test.csproj", "{E9772D94-AB81-487B-BC67-243D405E9E3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.BilousEYu.Sprint7.Project.V9.Test", "Tyuiu.BilousEYu.Sprint7.Project.V9.Test\Tyuiu.BilousEYu.Sprint7.Project.V9.Test.csproj", "{E9772D94-AB81-487B-BC67-243D405E9E3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.BilousEYu.Sprint7.Project.V9", "Tyuiu.BilousEYu.Sprint7.Project.V9\Tyuiu.BilousEYu.Sprint7.Project.V9.csproj", "{F1A0444B-E12F-443C-95FF-00076BC62EE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tyuiu.BilousEYu.Sprint7.Project.V9", "Tyuiu.BilousEYu.Sprint7.Project.V9\Tyuiu.BilousEYu.Sprint7.Project.V9.csproj", "{F1A0444B-E12F-443C-95FF-00076BC62EE0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{292C40F9-CAE2-4D33-B5DF-4BFC1C468159}"
 	ProjectSection(SolutionItems) = preProject
